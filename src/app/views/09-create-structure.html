@@ -18,105 +18,119 @@
             <h2 id="page_subtitle">Share your story with us</h2>
         </section>
 
-        <div id="aba1">
+        <div id="container">
 
-            <section id="aba1_title">
-                <h2>First, tell us which category best fits your news:</h2>
-            </section>
+            <div id="aba1">
+               <section id="aba1_title">
+                    <h2>First, tell us which category best fits your news:</h2>
+                </section>
 
-            <section id="aba1_checkbox">
-                <label for="science">
-                    <input type="checkbox" name="science" id="science">Science   
-                </label>
-                <label for="technology">
-                    <input type="checkbox" name="technology" id="technology">Technology
-                </label>
-                <label for="engineering">
-                    <input type="checkbox" name="engineering" id="engineering">Engineering
-                </label>
-                <label for="mathematics">
-                    <input type="checkbox" name="mathematics" id="mathematics">Mathematics
-                </label>
-                <label for="opportunities">
-                    <input type="checkbox" name="opportunities" id="opportunities">Opportunities
-                </label>
-            </section>
+                <section id="aba1_checkbox">
+                    <form>
+                        <p>
+                            <input type="radio" name="category" id="science">
+                            <label for="science"></label>Science</label>
+                        </p>
 
-            <section>
-                <button type="button" id="button0">Next</button><br>
-                <button id="indicator1"></button>
-                <button id="indicator2"></button>
-                <button id="indicator3"></button>
-                <button id="indicator4"></button>
-            </section>
+                        <p>
+                            <input type="radio" name="category" id="technology">
+                            <label for="technology"></label>Technology</label>
+                        </p>
 
-        </div>
+                        <p>
+                            <input type="radio" name="category" id="engineering">
+                            <label for="engineering"></label>Engineering</label>
+                        </p>
 
-        <div id="aba2">
+                        <p>
+                            <input type="radio" name="category" id="mathematics">
+                            <label for="mathematics"></label>Mathematics</label>
+                        </p>
 
-            <section>
-                <h2>Give us some initial details about your news:</h2>
-            </section>
+                        <p>
+                            <input type="radio" name="category" id="opportunities">
+                            <label for="opportunities"></label>Opportunities</label>
+                        </p>
+                    </form>
+                    
+                </section>
 
-            <section>
-                Title<br><input type="text" name="title" id="title"><br>
-                Author<br><input type="text" name="author" id="author"><br>
-            </section>
+                <section>
+                    <button type="button" id="button0">Next</button><br>
+                    <button id="indicator1"></button>
+                    <button id="indicator2"></button>
+                    <button id="indicator3"></button>
+                    <button id="indicator4"></button>
+                </section> 
+            </div>
+                
 
-            <section>
-                <button type="button" id="button1">Back</button>
-                <button type="button" id="button2">Next</button><br>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-            </section>
+            <div id="aba2" class="hidden">
 
-        </div>
+                <section>
+                    <h2>Give us some initial details about your news:</h2>
+                </section>
 
-        <div id="aba3">
+                <section>
+                    Title<br><input type="text" name="title" id="title"><br>
+                    Author<br><input type="text" name="author" id="author"><br>
+                </section>
 
-            <section>
-                <h2>Now, share the full report:</h2>
-            </section>
+                <section>
+                    <button type="button" id="button1">Back</button>
+                    <button type="button" id="button2">Next</button><br>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </section>
 
-            <section>
-                Text:<br><textarea name="title" id="title"></textarea><br>
-            </section>
+            </div>
 
-            <section>
-                <button type="button" id="button1">Back</button>
-                <button type="button" id="button2">Next</button><br>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-            </section>
+            <div id="aba3" class="hidden">
 
-        </div>
+                <section>
+                    <h2>Now, share the full report:</h2>
+                </section>
 
-        <div id="aba4">
+                <section>
+                    Text:<br><textarea name="title" id="title"></textarea><br>
+                </section>
 
-            <section>
-                <h2>Include images to illustrate your news:</h2>
-            </section>
+                <section>
+                    <button type="button" id="button1">Back</button>
+                    <button type="button" id="button2">Next</button><br>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </section>
 
-            <section>
-                <input type="file">
-            </section>
+            </div>
 
-            <section>
-                <button type="button" id="button1">Back</button>
-                <button type="button" id="button2">Next</button><br>
-                <button></button>
-                <button></button>
-                <button></button>
-                <button></button>
-            </section>
+            <div id="aba4" class="hidden">
 
-        </div>
+                <section>
+                    <h2>Include images to illustrate your news:</h2>
+                </section>
+
+                <section>
+                    <input type="file">
+                </section>
+
+                <section>
+                    <button type="button" id="button1">Back</button>
+                    <button type="button" id="button2">Next</button><br>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </section>
+
+            </div>
+        </div>    
 
     </div>
-
+    <script src="../js/09-create-structure.js"></script>
 </body>
 </html>
