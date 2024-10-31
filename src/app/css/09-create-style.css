@@ -49,10 +49,7 @@ h1, h2 {
     flex-direction: column;
 }
 
-
-
-
-#aba1_title {
+#container_title {
     margin-top: 42px;
     font-size: 14px;
     color: #384b70;
@@ -67,7 +64,6 @@ h1, h2 {
     font-weight: 500;
     color: #384b70;
 }
-
 
 #aba1_checkbox label {
     display: flex;
@@ -120,11 +116,47 @@ h1, h2 {
     transition: background-color 0.4s, border-color 0.4s;
 }
 
-#button0:hover {
+#button1 {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    margin-right: 40px;
+    width: 195px;
+    height: 40px;
+    border-radius: 50px;
+    border-style: solid;
+    background-color: #fff;
+    color: #000;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.4s, border-color 0.4s;
+}
+
+#button2 {
+    margin-top: 35px;
+    margin-bottom: 25px;
+    width: 195px;
+    height: 40px;
+    border-radius: 50px;
+    border-style: none;
+    background-color: #384b70;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.4s, border-color 0.4s;
+}
+
+#button0:hover, #button2:hover {
     background-color: #fff;
     border-style: solid;
     border-color: #384b70;
     color: #384b70;
+    transition: background-color 0.4s, border-color 0.4s;
+}
+
+#button1:hover {
+    background-color: #384b70;
+    border-style: none;
+    color: #fff;
     transition: background-color 0.4s, border-color 0.4s;
 }
 
@@ -144,4 +176,9 @@ h1, h2 {
     border-style: none;
     background-color: #384b70;
     opacity: 60%;
+}
+
+#title, #author {
+    height: 35px;
+    width: 450px;
 }
