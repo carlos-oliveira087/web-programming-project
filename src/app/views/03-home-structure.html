@@ -4,7 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../css/03-home-style.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/03-home-style.css">
+    
+    <!-- Fonte da logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fonte do corpo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title>Home – Bright Minds</title>
@@ -13,34 +26,79 @@
 
     <header class="header">
         <div id="header-top">
-            <div id="logo-container">
-                <!--
-                    <img src="../../../assets/logos/bright-minds-graphic.png" alt="Bright Minds Logo">
-                -->
-                <a id="logo-text" href="./03-home-structure.html">Bright Minds</a>
-            </div>
+            <a href="./03-home-structure.html" id="logo-link">
+                <div id="logo-container">
+                    <img id="logo-img" src="../../../assets/logos/bright-minds-graphic.png" alt="Bright Minds Logo">
+                    <span id="logo-text">Bright Minds</span>
+                </div>
+            </a>
 
             <div id="searchbar-container">
-                <input type="text" class="search-bar" placeholder="Search for educational news or insights...">
+                <input class="search-bar" type="text" placeholder="Search for educational news or insights...">
+                <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
             </div>
 
-            <div class="account-container">
+            <div id="account-container">
                 <a id="login-text" href="#">Login</a>
-                <i id="user-icon" class="fa-solid fa-circle-user"></i>
+                <i id="user-icon" class="fa-regular fa-circle-user"></i>
             </div>
         </div>
 
         <div id="header-bottom">
             <ul class="navigation-tabs">
-                <li class="nav-button"><a href="./03-home-structure.html" class="active">Home</a></li>
+                <li class="nav-button active"><a href="./03-home-structure.html" class="active">Home</a></li>
                 <li class="nav-button"><a href="./04-science-structure.html">Science</a></li>
                 <li class="nav-button"><a href="./05-technology-structure.html">Technology</a></li>
                 <li class="nav-button"><a href="./06-engineering-structure.html">Engineering</a></li>
                 <li class="nav-button"><a href="./07-mathematics-structure.html">Mathematics</a></li>
                 <li class="nav-button"><a href="./08-opportunities-structure.html">Opportunities</a></li>
             </ul>
+
+            <i id="hamburger-menu-icon" class="fa-solid fa-bars"></i>
         </div>
     </header>
+
+
+    <footer class="footer">
+        <div id="footer-content">
+            <div id="footer-titles">
+                <p class="footer-title">More from us</p>
+                <p class="footer-title">Join our Newsletter</p>
+            </div>
+            
+            <div id="more-container">
+                <div id="about-container">
+                    <p id="about-title">ABOUT</p>
+                    <p id="about-text">Bright Minds was created as the final project for the Web Programming course, Computer Science, 2024.2. </p>
+                </div>
+                
+                <div id="contact-container">
+                    <p id="contact-title">CONTACT</p>
+                    <a href="">
+                        <i class="fa-brands fa-github contact-icons"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-facebook contact-icons"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram contact-icons"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div id="newsletter-container">
+                <p id="newsletter-text">Receive original reporting and incisive analysis, direct from us every morning.</p>
+                <input id="mail-list-bar" type="text" placeholder="Enter your e-mail address">
+                <i id="mail-icon" class="fa-regular fa-envelope"></i>
+            </div>
+        </div>
+
+        <a id="back-to-top-button" href="#header">BACK TO TOP</a>
+
+        <hr>
+
+        <p id="copyright-text" >&copy; 2024 The Bright Minds Journal. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
