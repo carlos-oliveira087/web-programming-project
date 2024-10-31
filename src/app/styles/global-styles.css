@@ -175,7 +175,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 30px;
-
+    margin: 0 90px;
 }
 
 .footer-title {
@@ -194,12 +194,18 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 30px;
+    margin-left: 50px;
+    margin-top: -50px;
+}
 
+#about-title, #contact-title {
+    text-align: left;
 }
 
 /* Descrição do projeto */
 #about-container {
-    margin-right: 30px;
+    margin-right: 50px;
+    margin-left: 20px;
 }
 
 #about-text {
@@ -216,7 +222,7 @@ footer {
 }
 
 .contact-icons {
-    font-size: 30px;
+    font-size: 32px;
     cursor: pointer;
     margin: 10px 3px;
 }
@@ -224,9 +230,25 @@ footer {
 /* SEÇÃO DE NEWSLETTER */
 #newsletter-container {
     width: 300px;
+    position: relative;
+    margin-right: 150px;
+    margin-top: -35px;
+}
+
+#newsletter-text {
+    text-align: right;
+    width: 350px;
+    font-size: 14px;
+    padding-bottom: 20px;
+    padding-right: 5px;
 }
 
 /* Input de e-mail para inscrição na mail list */
+.input-icon-wrapper {
+    position: relative;
+    width: fit-content;
+}
+
 #mail-list-bar {
     width: 350px;
     border: none;
@@ -234,6 +256,17 @@ footer {
     height: 40px;
     font-style: italic;
     padding-left: 15px;
+    padding-right: 40px;
+}
+
+#mail-icon {
+    font-size: 18px;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #737373;
+    cursor: pointer;
 }
 
 /* Botão de voltar ao topo */
@@ -254,4 +287,29 @@ footer {
 #copyright-text {
     margin-top: 20px;
     font-size: 12px;
+}
+
+
+/* DIVERSOS ---------------------------------------------------------------- */
+
+/* Botão comum tipo 1*/
+.button-1 {
+    border: none;
+    border-radius: 50px;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 5px 35px;
+    background-color: #508c9b;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-1:hover {
+    background-color: #477c88;
+}
+
+.button-1:active {
+    background-color: #508c9b;
+    transform: scale(0.98);
 }
