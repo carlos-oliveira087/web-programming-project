@@ -1,8 +1,4 @@
-body {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-}
+@import url('./global-styles.css');
 
 h1, h2 {
     margin: 0;
@@ -13,11 +9,17 @@ h1, h2 {
 }
 
 #main_div {
-    margin-top: 50px;
+    margin-top: 47px;
+    margin-bottom: 55px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #title_box {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -39,7 +41,7 @@ h1, h2 {
 }
 
 #container {
-    margin-top: 53px;
+    margin-top: 40px;
     background-color: #f2f2f2;
     font-family: 'Roboto', 'Sofia Sans', sans-serif;
     width: 550px;
@@ -103,10 +105,10 @@ h1, h2 {
 }
 
 #button0 {
-    margin-top: 35px;
+    margin-top: 31px;
     margin-bottom: 25px;
     width: 450px;
-    height: 40px;
+    height: 43px;
     border-radius: 50px;
     border-style: none;
     background-color: #384b70;
@@ -117,11 +119,11 @@ h1, h2 {
 }
 
 #button1 {
-    margin-top: 35px;
+    margin-top: 53px;
     margin-bottom: 25px;
     margin-right: 40px;
     width: 195px;
-    height: 40px;
+    height: 43px;
     border-radius: 50px;
     border-style: solid;
     background-color: #fff;
@@ -132,10 +134,9 @@ h1, h2 {
 }
 
 #button2 {
-    margin-top: 35px;
     margin-bottom: 25px;
     width: 195px;
-    height: 40px;
+    height: 43px;
     border-radius: 50px;
     border-style: none;
     background-color: #384b70;
@@ -169,16 +170,58 @@ h1, h2 {
     padding: 2px;
 }
 
-#indicator2, #indicator3, #indicator4 {
+#indicator0 {
     width: 30px;
-    height: 9px;
+    height: 9.5px;
     border-radius: 50px;
     border-style: none;
     background-color: #384b70;
     opacity: 60%;
 }
 
+#inputs_area, #text_area, #file_area {
+    margin-top: 45px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #title, #author {
-    height: 35px;
+    height: 40px;
     width: 450px;
+    border-radius: 50px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: #000;
+}
+
+#text_label, #author_label {
+    align-self: flex-start;
+    margin-bottom: 13px;
+    font-size: 17px;
+    color: #384b70;
+    font-weight: 600;
+}
+
+#author_label {
+    margin-top: 35px;
+}
+
+#text_space {
+    height: 148px;
+    width: 450px;
+    border-radius: 20px;
+    border-width: 1.5px;
+}
+
+input[type='file'] {
+    display: none;
+}
+
+#file_area label {
+    width: 100px;
+    height: 100px;
+    color: #000;
+    background-color: #000;
 }
