@@ -4,11 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../styles/05-technology-style.css">
+    <!-- CSS local -->
+    <link rel="stylesheet" href="../styles/stem-styles.css">
+    
+    <!-- CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Fonte da logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fonte do corpo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <title>Technology – Bright Minds</title>
 </head>
 <body>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Logo, barra de pesquisa e login -->
+        <div id="header-top">
+            <a href="./03-home-structure.html" id="logo-link">
+                <div id="logo-container">
+                    <img id="logo-img" src="../../../assets/logos/bright-minds-graphic.png" alt="Bright Minds Logo">
+                    <span id="logo-text">Bright Minds</span>
+                </div>
+            </a>
+            
+            <div id="searchbar-container">
+                <input class="search-bar" type="text" placeholder="Search for educational news or insights...">
+                <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            
+            <div id="account-container">
+                <a id="login-text" href="#">Login</a>
+                <i id="user-icon" class="fa-regular fa-circle-user"></i>
+            </div>
+        </div>
+        
+        <!-- Abas de navegação por área de conhecimento -->
+        <div id="header-bottom">
+            <ul class="navigation-tabs">
+                <li class="nav-button"><a href="./03-home-structure.html">Home</a></li>
+                <li class="nav-button"><a href="./04-science-structure.html">Science</a></li>
+                <li class="nav-button active"><a href="./05-technology-structure.html" class="active">Technology</a></li>
+                <li class="nav-button"><a href="./06-engineering-structure.html">Engineering</a></li>
+                <li class="nav-button"><a href="./07-mathematics-structure.html">Mathematics</a></li>
+                <li class="nav-button"><a href="./08-opportunities-structure.html">Opportunities</a></li>
+            </ul>
+            
+            <!-- Menu -->
+            <i id="hamburger-menu-icon" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
     
+    
+    <!-- Conteúdo -->
+    <div id="home-content">
+
+        <!-- Mais recentes e em alta -->
+        <div class="latest">
+            <p class="latest-section-title">Latest in <span class="title-topic-color">Technology</span></p>
+            <hr class="hr-blue">
+
+            <div class="latest-content">
+                <!-- Notícia mais recente -->
+                <div class="latest-article">
+                    <img src="https://via.placeholder.com/400x200" alt="Nanotechnology in Medicine">
+                    <h4>Harnessing the Power of Nanotechnology in Medicine</h4>
+                    <p>Nanotechnology is revolutionizing the medical field by enabling targeted drug delivery and improved imaging techniques. This article explores the latest advancements and their potential impact on patient care.</p>
+                </div>
+
+                <!-- Assuntos em alta -->
+                <div class="trending-list">
+                    <p class="trending-section-title">Trending topics in <span class="title-topic-color">Technology</span></p>
+                    <hr class="hr-blue">
+                    <ol class="list-group">
+                        <li class="list-group-item"><a href="">1.  CRISPR and Gene Editing</a></li>
+                        <li class="list-group-item"><a href="">2.  Climate Change and Environmental Science</a></li>
+                        <li class="list-group-item"><a href="">3.  Microbiome Research</a></li>
+                        <li class="list-group-item"><a href="">4.  Artificial Intelligence in Drug Discovery</a></li>
+                        <li class="list-group-item"><a href="">5.  Synthetic Biology</a></li>
+                        <li class="list-group-item"><a href="">6.  Neuroscience and Brain Research</a></li>
+                        <li class="list-group-item"><a href="">7.  Nanotechnology in Medicine</a></li>
+                    </ol>                    
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Cards de notícias -->
+    </div>
+    
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div id="footer-titles">
+            <p class="footer-title">More from us</p>
+            <p class="footer-title">Join our Newsletter</p>
+        </div>
+        
+        <div id="footer-content">
+            
+            <div id="more-container">
+                <div id="about-container">
+                    <p id="about-title">ABOUT</p>
+                    <p id="about-text">Bright Minds was created as the final project for the Web Programming course, Computer Science, 2024.2. </p>
+                </div>
+                
+                <div id="contact-container">
+                    <p id="contact-title">CONTACT</p>
+                    <a href="https://github.com/carlos-oliveira087/web-programming-project">
+                        <i class="fa-brands fa-github contact-icons"></i>
+                    </a>
+                    <a href="https://web.facebook.com/">
+                        <i class="fa-brands fa-facebook contact-icons"></i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram contact-icons"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div id="newsletter-container">
+                <p id="newsletter-text">Receive original reporting and incisive analysis, direct from us every morning.</p>
+                <div class="input-icon-wrapper">
+                    <input id="mail-list-bar" type="text" placeholder="Enter your e-mail address">
+                    <i id="mail-icon" class="fa-regular fa-envelope"></i>
+                </div>
+                <a href="">
+                    <button class="button-1">Subscribe</button>
+                </a>
+            </div>
+            
+        </div>
+
+        <a id="back-to-top-button" href="#header">BACK TO TOP</a>
+
+        <hr>
+
+        <p id="copyright-text" >&copy; 2024 The Bright Minds Journal. All rights reserved.</p>
+    </footer>
+
+
+    <!-- Scripts locais -->
+    <script src="../scripts/03-home-script.js"></script>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../styles/04-science-style.css">
+    <!-- CSS local -->
+    <link rel="stylesheet" href="../styles/stem-styles.css">
+    
+    <!-- CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Fonte da logo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,7 +26,10 @@
     <title>Science – Bright Minds</title>
 </head>
 <body>
+
+    <!-- Header -->
     <header class="header">
+        <!-- Logo, barra de pesquisa e login -->
         <div id="header-top">
             <a href="./03-home-structure.html" id="logo-link">
                 <div id="logo-container">
@@ -31,18 +37,19 @@
                     <span id="logo-text">Bright Minds</span>
                 </div>
             </a>
-
+            
             <div id="searchbar-container">
                 <input class="search-bar" type="text" placeholder="Search for educational news or insights...">
                 <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
             </div>
-
+            
             <div id="account-container">
                 <a id="login-text" href="#">Login</a>
                 <i id="user-icon" class="fa-regular fa-circle-user"></i>
             </div>
         </div>
-
+        
+        <!-- Abas de navegação por área de conhecimento -->
         <div id="header-bottom">
             <ul class="navigation-tabs">
                 <li class="nav-button"><a href="./03-home-structure.html">Home</a></li>
@@ -52,12 +59,52 @@
                 <li class="nav-button"><a href="./07-mathematics-structure.html">Mathematics</a></li>
                 <li class="nav-button"><a href="./08-opportunities-structure.html">Opportunities</a></li>
             </ul>
-
+            
+            <!-- Menu -->
             <i id="hamburger-menu-icon" class="fa-solid fa-bars"></i>
         </div>
     </header>
+    
+    
+    <!-- Conteúdo -->
+    <div id="home-content">
+
+        <!-- Mais recentes e em alta -->
+        <div class="latest">
+            <p class="latest-section-title">Latest in <span class="title-topic-color">Science</span></p>
+            <hr class="hr-blue">
+
+            <div class="latest-content">
+                <!-- Notícia mais recente -->
+                <div class="latest-article">
+                    <img src="https://via.placeholder.com/400x200" alt="Nanotechnology in Medicine">
+                    <h4>Harnessing the Power of Nanotechnology in Medicine</h4>
+                    <p>Nanotechnology is revolutionizing the medical field by enabling targeted drug delivery and improved imaging techniques. This article explores the latest advancements and their potential impact on patient care.</p>
+                </div>
+
+                <!-- Assuntos em alta -->
+                <div class="trending-list">
+                    <p class="trending-section-title">Trending topics in <span class="title-topic-color">Science</span></p>
+                    <hr class="hr-blue">
+                    <ol class="list-group">
+                        <li class="list-group-item"><a href="">1.  CRISPR and Gene Editing</a></li>
+                        <li class="list-group-item"><a href="">2.  Climate Change and Environmental Science</a></li>
+                        <li class="list-group-item"><a href="">3.  Microbiome Research</a></li>
+                        <li class="list-group-item"><a href="">4.  Artificial Intelligence in Drug Discovery</a></li>
+                        <li class="list-group-item"><a href="">5.  Synthetic Biology</a></li>
+                        <li class="list-group-item"><a href="">6.  Neuroscience and Brain Research</a></li>
+                        <li class="list-group-item"><a href="">7.  Nanotechnology in Medicine</a></li>
+                    </ol>                    
+                </div>
+            </div>
+        </div>
 
 
+        <!-- Cards de notícias -->
+    </div>
+    
+    
+    <!-- Footer -->
     <footer class="footer">
         <div id="footer-titles">
             <p class="footer-title">More from us</p>
@@ -105,5 +152,15 @@
 
         <p id="copyright-text" >&copy; 2024 The Bright Minds Journal. All rights reserved.</p>
     </footer>
+
+
+    <!-- Scripts locais -->
+    <script src="../scripts/03-home-script.js"></script>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

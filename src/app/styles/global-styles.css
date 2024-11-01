@@ -278,8 +278,10 @@ footer {
     cursor: pointer;
 }
 
-hr {
-    color: #fff !important;
+footer hr {
+    background-color: #fff;
+    height: 1px;
+    border: none;
 }
 
 /* Botão de voltar ao topo */
@@ -325,4 +327,30 @@ hr {
 .button-1:active {
     background-color: #508c9b;
     transform: scale(0.98);
+}
+
+/* HR (linha horizontal) azul */
+.hr-blue {
+    background-color: #001f3f;
+    height: 1.5px;
+    border: none;
+}
+
+/* Cor para cada seção nos títulos */
+.title-topic-color {
+    color: #001f3f;
+}
+
+/* SEÇÃO LATEST */
+/* Título de seção Latest (mais recente) */
+.latest-section-title {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+/* SEÇÃO TRENDING */
+/* Título de seção Trending (em alta) */
+.trending-section-title {
+    font-size: 22px;
+    font-weight: 500;
 }
