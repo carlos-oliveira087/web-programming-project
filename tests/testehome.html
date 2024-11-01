@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Minds News</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f9;
+        }
+        .spotlight {
+            background-image: url('https://via.placeholder.com/1200x400'); /* Substitua com a imagem desejada */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .spotlight h2 {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        
+        .latest, .trending-topics {
+            padding: 20px;
+            margin: 20px;
+        }
+        .latest h3, .trending-topics h3 {
+            font-size: 1.5em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .latest-content, .trending-content {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .latest-article {
+            width: 60%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .latest-article img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .latest-article h4 {
+            margin-top: 15px;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+        .trending-list {
+            width: 35%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .trending-list ul {
+            list-style: none;
+            padding: 0;
+        }
+        .trending-list li {
+            margin: 10px 0;
+            font-size: 1em;
+        }
+        .trending-list a {
+            text-decoration: none;
+            color: #333;
+        }
+        .trending-list a:hover {
+            color: #007acc;
+        }
+    </style>
+</head>
+<body>
+    <div class="latest">
+        <h3>Latest</h3>
+        <div class="latest-content">
+            <div class="latest-article">
+                <img src="https://via.placeholder.com/400x200" alt="Nanotechnology in Medicine">
+                <h4>Harnessing the Power of Nanotechnology in Medicine</h4>
+                <p>Nanotechnology is revolutionizing the medical field by enabling targeted drug delivery and improved imaging techniques. This article explores the latest advancements and their potential impact on patient care.</p>
+            </div>
+            <div class="trending-list">
+                <h3>Trending topics</h3>
+                <ul>
+                    <li><a href="#">1. Artificial Intelligence in Education</a></li>
+                    <li><a href="#">2. Climate Change Innovations</a></li>
+                    <li><a href="#">3. Quantum Computing Advancements</a></li>
+                    <li><a href="#">4. Space Exploration Missions</a></li>
+                    <li><a href="#">5. Biotechnology Breakthroughs</a></li>
+                    <li><a href="#">6. Renewable Energy Technologies</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="cardCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-around">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 1</h5>
+                            <p class="card-text">Some quick example text to build on the card title.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 2</h5>
+                            <p class="card-text">Some quick example text to build on the card title.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 3</h5>
+                            <p class="card-text">Some quick example text to build on the card title.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-around">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 4</h5>
+                            <p class="card-text">Some quick example text to build on the card title.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 5</h5>
+                            <p class="card-text">Some quick example text to build on the card title.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="https://via.placeholder.com/150" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Card Title 6</h5>
+                            <p class="card-text">Some quick example text to build on the card title.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#cardCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#cardCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <!-- Adicione seus itens de carrossel aqui -->
+            <div class="carousel-item active">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    
+
+
+
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="..." alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+
+
+    <script src="/app3.js"></script>
+
+</body>
+</html>

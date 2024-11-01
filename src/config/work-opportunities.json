@@ -1,44 +1,44 @@
 {
-  "programs": [
+  "internships": [
     {
-      "title": "AI Research Exchange in Canada",
-      "description": "Conduct AI research and collaborate with Canadian tech leaders. A unique opportunity for students passionate about AI."
+      "title": "Software Engineering Intern",
+      "description": "Join our team to build and optimize software applications. Ideal for those passionate about coding and problem-solving. Apply today!"
     },
     {
-      "title": "Sustainable Energy Program in Denmark",
-      "description": "Study sustainable energy solutions in Denmark. Join a network of innovators focused on renewable technology."
+      "title": "Data Science Internship",
+      "description": "Analyze real-world data and develop insights with our data science team. A perfect fit for students interested in big data and analytics."
     },
     {
-      "title": "Bioinformatics Exchange in Japan",
-      "description": "Learn bioinformatics in Japan, working alongside industry experts. Ideal for students in biology and data science."
+      "title": "Cybersecurity Intern",
+      "description": "Help protect digital assets and learn advanced security techniques. Ideal for students excited about cybersecurity."
     },
     {
-      "title": "Space Technology Program in the USA",
-      "description": "Engage in space technology projects with top aerospace experts in the USA. A must for future aerospace innovators."
+      "title": "AI & Machine Learning Intern",
+      "description": "Work with AI experts to develop machine learning models and AI applications. Great for those interested in cutting-edge technology."
     },
     {
-      "title": "Cybersecurity Exchange in Israel",
-      "description": "Immerse yourself in cybersecurity studies in Israel. Ideal for students looking to master security in the digital world."
+      "title": "Renewable Energy Internship",
+      "description": "Contribute to projects in clean energy and sustainability. Perfect for students committed to environmental innovation."
     },
     {
-      "title": "Robotics Engineering in South Korea",
-      "description": "Study and work in robotics engineering with South Korean experts. Perfect for students driven by automation technology."
+      "title": "Biomedical Engineering Intern",
+      "description": "Support research in biomedical technology and healthcare solutions. Ideal for those focused on engineering in medicine."
     },
     {
-      "title": "Environmental Science Exchange in New Zealand",
-      "description": "Explore environmental science and conservation efforts in New Zealand. Ideal for eco-conscious students."
+      "title": "Robotics Internship",
+      "description": "Collaborate on robotics design and testing. Hands-on experience for students passionate about automation and robotics."
     },
     {
-      "title": "Quantum Computing Program in Switzerland",
-      "description": "Dive into quantum computing research in Switzerland. A rare opportunity for students keen on next-gen computing."
+      "title": "Environmental Science Intern",
+      "description": "Engage in environmental research and sustainability projects. Suited for students dedicated to ecological preservation."
     },
     {
-      "title": "Renewable Energy Program in Germany",
-      "description": "Join Germany’s top renewable energy initiatives and learn from industry leaders. Ideal for sustainable energy enthusiasts."
+      "title": "Chemical Engineering Intern",
+      "description": "Assist with chemical processes in a laboratory setting. A valuable experience for students interested in industrial chemistry."
     },
     {
-      "title": "Biotechnology Exchange in the Netherlands",
-      "description": "Participate in biotechnology projects and research in the Netherlands. Great for students in life sciences."
+      "title": "Space Technology Intern",
+      "description": "Work on projects related to aerospace engineering and satellite technology. Perfect for aspiring aerospace engineers."
     }
   ]
 }

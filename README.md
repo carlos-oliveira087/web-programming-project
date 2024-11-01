@@ -78,5 +78,5 @@ Beatriz Almeida de Souza Silva<br>
 Hugo Lins Pedrosa<br>
 Ian Mendonça Madruga de Carvalho<br>
 José Carlos Oliveira<br>
-Rigel Sales de Souza<br>
+Rigel Sales de Souza<br><br>
 Novembro de 2024.

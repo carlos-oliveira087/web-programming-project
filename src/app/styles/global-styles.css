@@ -43,7 +43,7 @@ header a {
     margin-left: 7px;
 }
 
-/* Barra de navegação */
+/* Barra de pesquisa */
 #searchbar-container {
     position: relative;
 }
@@ -105,7 +105,17 @@ header a {
     flex-grow: 1;
 }
 
+.nav-button-links:hover {
+    text-decoration: none;
+}
+
+.nav-button:hover {
+    text-decoration: none;
+
+}
+
 .nav-button {
+    text-decoration: none;
     padding: 15px 50px;
     position: relative;
 }
@@ -165,7 +175,6 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -267,6 +276,10 @@ footer {
     transform: translateY(-50%);
     color: #737373;
     cursor: pointer;
+}
+
+hr {
+    color: #fff !important;
 }
 
 /* Botão de voltar ao topo */
