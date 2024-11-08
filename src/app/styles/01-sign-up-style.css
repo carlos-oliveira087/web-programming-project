@@ -13,7 +13,7 @@
 .leftside   {
     display: flex;
     flex: 1;
-    background-image: url(../../assets/images/background-image4.jpg);
+    background-image: url("../styles/01-sign-up-style.css");
     background-size: cover;
     background-position: center;
 }
