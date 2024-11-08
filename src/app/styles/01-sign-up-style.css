@@ -13,7 +13,7 @@
 .leftside   {
     display: flex;
     flex: 1;
-    background-image: url(login_background.jpg);
+    background-image: url(../../assets/images/background-image4.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -90,3 +90,6 @@
 
 }
 
+#sparkles-login {
+    width: 10%;
+}
