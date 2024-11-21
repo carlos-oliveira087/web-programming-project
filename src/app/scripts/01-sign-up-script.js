@@ -26,7 +26,7 @@ document.querySelector('form').addEventListener('submit', async function (event)
             localStorage.setItem('email', result.email);
             localStorage.setItem('password', result.password);
 
-            alert('Login successful! Redirecting...');
+            alert('User created successfuly! Redirecting...');
             window.location.href = '../pages/02-login.html';
         }
 
