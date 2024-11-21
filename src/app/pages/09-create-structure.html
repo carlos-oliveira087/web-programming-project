@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../styles/09-create-style.css">
+    
+    <!-- Fonte da logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fonte do corpo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <div id="main_div">
+
+        <section id="title_box">
+            <h1 id="page_title">Submit Your News</h1>
+            <h2 id="page_subtitle">Share your story with us</h2>
+        </section>
+
+        <div id="container">
+
+            <div id="aba1">
+               <section id="aba1_title">
+                    <h2>First, tell us which category best fits your news:</h2>
+                </section>
+
+                <section id="aba1_checkbox">
+                    <form>
+                        <p>
+                            <input type="radio" name="category" id="science">
+                            <label for="science"></label>Science</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="category" id="technology">
+                            <label for="technology"></label>Technology</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="category" id="engineering">
+                            <label for="engineering"></label>Engineering</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="category" id="mathematics">
+                            <label for="mathematics"></label>Mathematics</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="category" id="opportunities">
+                            <label for="opportunities"></label>Opportunities</label>
+                        </p>
+                    </form>
+                    
+                </section>
+
+                <section>
+                    <button type="button" id="button0">Next</button><br>
+                    <button id="indicator1"></button>
+                    <button id="indicator2"></button>
+                    <button id="indicator3"></button>
+                    <button id="indicator4"></button>
+                </section> 
+            </div>
+                
+
+            <div id="aba2" class="hidden">
+
+                <section>
+                    <h2>Give us some initial details about your news:</h2>
+                </section>
+
+                <section>
+                    Title<br><input type="text" name="title" id="title"><br>
+                    Author<br><input type="text" name="author" id="author"><br>
+                </section>
+
+                <section>
+                    <button type="button" id="button1">Back</button>
+                    <button type="button" id="button2">Next</button><br>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </section>
+
+            </div>
+
+            <div id="aba3" class="hidden">
+
+                <section>
+                    <h2>Now, share the full report:</h2>
+                </section>
+
+                <section>
+                    Text:<br><textarea name="title" id="title"></textarea><br>
+                </section>
+
+                <section>
+                    <button type="button" id="button1">Back</button>
+                    <button type="button" id="button2">Next</button><br>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </section>
+
+            </div>
+
+            <div id="aba4" class="hidden">
+
+                <section>
+                    <h2>Include images to illustrate your news:</h2>
+                </section>
+
+                <section>
+                    <input type="file">
+                </section>
+
+                <section>
+                    <button type="button" id="button1">Back</button>
+                    <button type="button" id="button2">Next</button><br>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                    <button></button>
+                </section>
+
+            </div>
+        </div>    
+
+    </div>
+    <script src="../js/09-create-structure.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS local -->
+    <link rel="stylesheet" href="../styles/03-home-style.css">
+    
+    <!-- CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Fonte da logo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fonte do corpo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Home – Bright Minds</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header">
+        <!-- Logo, barra de pesquisa e login -->
+        <div id="header-top">
+            <a href="./03-home-structure.html" id="logo-link">
+                <div id="logo-container">
+                    <img id="logo-img" src="../../../assets/logos/bright-minds-graphic.png" alt="Bright Minds Logo">
+                    <span id="logo-text">Bright Minds</span>
+                </div>
+            </a>
+            
+            <div id="searchbar-container">
+                <input class="search-bar" type="text" placeholder="Search for educational news or insights...">
+                <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            
+            <div id="account-container">
+                <a id="login-text" href="#">Login</a>
+                <i id="user-icon" class="fa-regular fa-circle-user"></i>
+            </div>
+        </div>
+        
+        <!-- Abas de navegação por área de conhecimento -->
+        <div id="header-bottom">
+            <ul class="navigation-tabs">
+                <li class="nav-button active"><a href="./03-home-structure.html" class="active">Home</a></li>
+                <li class="nav-button"><a href="./04-science-structure.html">Science</a></li>
+                <li class="nav-button"><a href="./05-technology-structure.html">Technology</a></li>
+                <li class="nav-button"><a href="./06-engineering-structure.html">Engineering</a></li>
+                <li class="nav-button"><a href="./07-mathematics-structure.html">Mathematics</a></li>
+                <li class="nav-button"><a href="./08-opportunities-structure.html">Opportunities</a></li>
+            </ul>
+            
+            <!-- Menu hambúrguer (aberto) -->
+            <div id="hamburger-menu" class="hamburger-menu">
+                <div id="hamburger-menu-items">
+                    <ul>
+                        <li><a href="#">Publish new article</a></li>
+                        <li><a href="#">My published articles</a></li>
+                        <li><a href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Menu hambúrguer (ícone) -->
+            <i id="hamburger-menu-icon" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    
+    
+    <!-- Conteúdo da Home -->
+    <div id="home-content">
+
+        <!-- Carrossel -->
+        <div id="spotlight-carousel" class="position-relative">
+            <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="../../../assets/images/spotlight-image1.jpg" alt="First slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="spotlight-label">SPOTLIGHT</p>
+                                <p class="spotlight-news-title">New Horizons: NASA's Latest Mission Uncovers Potential Signs of Life on Distant Exoplanet</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../../../assets/images/spotlight-image2.jpg" alt="Second slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="spotlight-label">SPOTLIGHT</p>
+                                <p class="spotlight-news-title">Mathematics Breakthrough: Solving a Century-Old Equation Could Revolutionize Quantum Computing</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../../../assets/images/spotlight-image3.jpg" alt="Third slide">
+                            <div class="carousel-caption d-none d-md-block">
+                                <p class="spotlight-label">SPOTLIGHT</p>
+                                <p class="spotlight-news-title">Revolutionary Discovery: Scientists Decode the Genetic Blueprint of the World's Oldest Living Tree Species</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+
+                    <div class="gradient-overlay"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="latest">
+            <h3>Latest</h3>
+            <div class="latest-content">
+                <!-- Notícia mais recente -->
+                <div class="latest-article">
+                    <img src="https://via.placeholder.com/400x200" alt="Nanotechnology in Medicine">
+                    <h4>Harnessing the Power of Nanotechnology in Medicine</h4>
+                    <p>Nanotechnology is revolutionizing the medical field by enabling targeted drug delivery and improved imaging techniques. This article explores the latest advancements and their potential impact on patient care.</p>
+                </div>
+
+                <!-- Assuntos em alta -->
+                <div class="trending-list">
+                    <h3>Trending topics</h3>
+                    <ul>
+                        <li><a href="#">1. Artificial Intelligence in Education</a></li>
+                        <li><a href="#">2. Climate Change Innovations</a></li>
+                        <li><a href="#">3. Quantum Computing Advancements</a></li>
+                        <li><a href="#">4. Space Exploration Missions</a></li>
+                        <li><a href="#">5. Biotechnology Breakthroughs</a></li>
+                        <li><a href="#">6. Renewable Energy Technologies</a></li>
+                        <li><a href="#">7. Blockchain and Cryptocurrency Trends</a></li>
+                        <li><a href="#">8. Advances in Genetic Engineering</a></li>
+                        <li><a href="#">9. Robotics and Automation in Industries</a></li>
+                        <li><a href="#">10. Mental Health Awareness in the Digital Age</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div id="footer-titles">
+            <p class="footer-title">More from us</p>
+            <p class="footer-title">Join our Newsletter</p>
+        </div>
+        
+        <div id="footer-content">
+            
+            <div id="more-container">
+                <div id="about-container">
+                    <p id="about-title">ABOUT</p>
+                    <p id="about-text">Bright Minds was created as the final project for the Web Programming course, Computer Science, 2024.2. </p>
+                </div>
+                
+                <div id="contact-container">
+                    <p id="contact-title">CONTACT</p>
+                    <a href="https://github.com/carlos-oliveira087/web-programming-project">
+                        <i class="fa-brands fa-github contact-icons"></i>
+                    </a>
+                    <a href="https://web.facebook.com/">
+                        <i class="fa-brands fa-facebook contact-icons"></i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram contact-icons"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div id="newsletter-container">
+                <p id="newsletter-text">Receive original reporting and incisive analysis, direct from us every morning.</p>
+                <div class="input-icon-wrapper">
+                    <input id="mail-list-bar" type="text" placeholder="Enter your e-mail address">
+                    <i id="mail-icon" class="fa-regular fa-envelope"></i>
+                </div>
+                <a href="">
+                    <button class="button-1">Subscribe</button>
+                </a>
+            </div>
+            
+        </div>
+
+        <a id="back-to-top-button" href="#header">BACK TO TOP</a>
+
+        <hr>
+
+        <p id="copyright-text" >&copy; 2024 The Bright Minds Journal. All rights reserved.</p>
+    </footer>
+
+
+    <!-- Scripts locais -->
+    <script src="../scripts/hamburger-menu-script.js"></script>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
