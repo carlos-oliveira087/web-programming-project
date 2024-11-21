@@ -27,7 +27,7 @@ document.querySelector('form').addEventListener('submit', async function (event)
             localStorage.setItem('password', result.password);
 
             alert('Login successful! Redirecting...');
-            window.location.href = '../pages/03-home-structure.html';
+            window.location.href = '../pages/02-login.html';
         }
 
         else    {
