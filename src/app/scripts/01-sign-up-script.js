@@ -5,13 +5,16 @@ document.querySelector('form').addEventListener('submit', async function (event)
 
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
     const formData = new FormData();
 
+    formData.append('name', name);
     formData.append('email', email);
+    formData.append('password', password);
 
     try {
-        const response = await fetch('../controllers/credentials_check.php', {
+        const response = await fetch('../controllers/01-create_user.php', {
             method: 'POST',
             body: formData,
         });
@@ -19,7 +22,9 @@ document.querySelector('form').addEventListener('submit', async function (event)
         const result = await response.json();
 
         if(result.status === 'success') {
+            localStorage.setItem('name', result.name);
             localStorage.setItem('email', result.email);
+            localStorage.setItem('password', result.password);
 
             alert('Login successful! Redirecting...');
             window.location.href = '../pages/03-home-structure.html';

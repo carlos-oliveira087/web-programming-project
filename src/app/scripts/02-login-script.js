@@ -3,13 +3,14 @@ document.querySelector('form').addEventListener('submit', async function (event)
     event.preventDefault();
 
     const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
 
     const formData = new FormData();
 
     formData.append('email', email);
 
     try {
-        const response = await fetch('../controllers/credentials_check.php', {
+        const response = await fetch('../controllers/02-credentials_check.php', {
             method: 'POST',
             body: formData,
         });
