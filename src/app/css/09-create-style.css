@@ -28,7 +28,6 @@ h1, h2 {
 
 #page_title {
     font-size: 41.8px;
-    font-family: 'Roboto', 'Sofia Sans', sans-serif;
     color: #384b70;
 }
 
@@ -36,14 +35,12 @@ h1, h2 {
     font-size: 26.3px;
     align-self: self-end;
     margin-top: 10px;
-    font-family: 'Roboto', 'Sofia Sans', sans-serif;
     color: #384b70;
 }
 
 #container {
     margin-top: 40px;
     background-color: #f2f2f2;
-    font-family: 'Roboto', 'Sofia Sans', sans-serif;
     width: 550px;
     height: 470px;
     border-radius: 50px;
@@ -60,16 +57,23 @@ h1, h2 {
 #aba1_checkbox {
     display: flex;
     flex-direction: column;
-    margin-top: 33px;
+    margin-top: 66px;
     font-size: 18px;
-    font-family: 'Roboto', 'Sofia Sans', sans-serif;
-    font-weight: 500;
+    font-weight: bolder;
     color: #384b70;
 }
 
 #aba1_checkbox label {
     display: flex;
     align-items: center;
+}
+
+#check_1 {
+    margin-bottom: 24.7px;
+}
+
+#check_5 {
+    margin-bottom: 12px;
 }
 
 #aba1_checkbox input[type="radio"] {
@@ -179,7 +183,7 @@ h1, h2 {
     opacity: 60%;
 }
 
-#inputs_area, #text_area, #file_area {
+#inputs_area, #text_area {
     margin-top: 45px;
     display: inline-flex;
     flex-direction: column;
@@ -194,9 +198,11 @@ h1, h2 {
     border-width: 1.5px;
     border-style: solid;
     border-color: #000;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-#text_label, #author_label {
+#text_label, #author_label, #file_label {
     align-self: flex-start;
     margin-bottom: 13px;
     font-size: 17px;
@@ -208,20 +214,46 @@ h1, h2 {
     margin-top: 35px;
 }
 
+#file_label {
+    margin-bottom: 13px;
+    margin-top: 41px;
+}
+
 #text_space {
     height: 148px;
     width: 450px;
     border-radius: 20px;
     border-width: 1.5px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 input[type='file'] {
     display: none;
 }
 
-#file_area label {
-    width: 100px;
-    height: 100px;
-    color: #000;
-    background-color: #000;
+#file_area {
+    width: 450px;
+    height: 148px;
+    margin-top: 4px;
+    background-color: #fff;
+    border-radius: 20px;
+    border-width: 1.5px;
+    border-style: solid;
+    border-color: #000;
+    display: inline-flex;
+    justify-content: center;
+    cursor: pointer;
 }
+
+#plus_icon {
+    display: flex;
+    font-size: 90px;
+    color: #384b70;
+    align-self: center;
+    opacity: 0.85;
+    cursor: pointer;
+}
+

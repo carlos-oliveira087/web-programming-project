@@ -58,34 +58,30 @@
             <div id="aba1">
                <section id="container_title">
                     <h2>First, tell us which category best fits your news:</h2>
-                </section>
+                </section> 
 
                 <section id="aba1_checkbox">
-                    <form> <!--COLOCAR COMO REQUIRED-->
-                        <p>
-                            <input type="radio" name="category" id="science">
+                    <form>
+                        <div id="check_1">
+                            <input type="radio" name="category" id="science" required oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
                             <label for="science"></label>Science
-                        </p>
+                        </div>
 
-                        <p>
-                            <input type="radio" name="category" id="technology">
+                        <div id="check_1">
+                            <input type="radio" name="category" id="technology" oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
                             <label for="technology"></label>Technology
-                        </p>
+                        </div>
 
-                        <p>
-                            <input type="radio" name="category" id="engineering">
+                        <div id="check_1">
+                            <input type="radio" name="category" id="engineering" oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
                             <label for="engineering"></label>Engineering
-                        </p>
+                        </div>
 
-                        <p>
-                            <input type="radio" name="category" id="mathematics">
+                        <div id="check_1">
+                            <input type="radio" name="category" id="mathematics" oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
                             <label for="mathematics"></label>Mathematics
-                        </p>
+                        </div>
 
-                        <p>
-                            <input type="radio" name="category" id="opportunities">
-                            <label for="opportunities"></label>Opportunities
-                        </p>
                     </form>
                 </section>
 
@@ -106,8 +102,8 @@
                 </section>
 
                 <section id="inputs_area">
-                    <label id="text_label">Title:</label><input type="text" name="title" id="title">
-                    <label id="author_label">Author:</label><input type="text" name="author" id="author">
+                    <label id="text_label">Title:</label><input type="text" name="title" id="title" required oninvalid="this.setCustomValidity('Fill in the title field')" onchange="this.setCustomValidity('')">
+                    <label id="author_label">Author:</label><input type="text" name="author" id="author" required oninvalid="this.setCustomValidity('Fill in the author field')" onchange="this.setCustomValidity('')">
                 </section>
 
                 <section>
@@ -128,7 +124,7 @@
                 </section>
 
                 <section id="text_area">
-                    <label id="text_label">Text:</label><textarea id="text_space"></textarea>
+                    <label id="text_label">Text:</label><textarea id="text_space" required oninvalid="this.setCustomValidity('Fill in the title field')" onchange="this.setCustomValidity('')"></textarea>
                 </section>
 
                 <section>
@@ -148,9 +144,13 @@
                     <h2>Include images to illustrate your news:</h2>
                 </section>
 
+                <section id="file_label">
+                    <label for="file">Drop your file:</label> 
+                </section>
+
                 <section id="file_area">
-                    <label id="text_label" for="file">File:</label> 
-                    <input id="file" type="file">
+                    <label for="file" id="plus_icon">+</label>
+                    <input id="file" type="file" required multiple>
                 </section>
 
                 <section>
