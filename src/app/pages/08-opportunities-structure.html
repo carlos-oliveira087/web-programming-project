@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../styles/04-science-style.css">
+    <!-- CSS local -->
+    <link rel="stylesheet" href="../styles/stem-styles.css">
+
+    <!-- CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <!-- Fonte da logo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,10 +23,13 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-    <title>Opportunities – Bright Minds</title>
+    <title>Mathematics – Bright Minds</title>
 </head>
 <body>
+
+    <!-- Header -->
     <header class="header">
+        <!-- Logo, barra de pesquisa e login -->
         <div id="header-top">
             <a href="./03-home-structure.html" id="logo-link">
                 <div id="logo-container">
@@ -31,38 +37,53 @@
                     <span id="logo-text">Bright Minds</span>
                 </div>
             </a>
-
+            
             <div id="searchbar-container">
                 <input class="search-bar" type="text" placeholder="Search for educational news or insights...">
                 <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
             </div>
-
+            
             <div id="account-container">
                 <a id="login-text" href="#">Login</a>
                 <i id="user-icon" class="fa-regular fa-circle-user"></i>
             </div>
         </div>
-
+        
+        <!-- Abas de navegação por área de conhecimento -->
         <div id="header-bottom">
             <ul class="navigation-tabs">
-                <li class="nav-button active"><a href="./03-home-structure.html">Home</a></li>
+                <li class="nav-button"><a href="./03-home-structure.html">Home</a></li>
                 <li class="nav-button"><a href="./04-science-structure.html">Science</a></li>
                 <li class="nav-button"><a href="./05-technology-structure.html">Technology</a></li>
                 <li class="nav-button"><a href="./06-engineering-structure.html">Engineering</a></li>
-                <li class="nav-button"><a href="./07-mathematics-structure.html">Mathematics</a></li>
-                <li class="nav-button"><a href="./08-opportunities-structure.html" class="active">Opportunities</a></li>
+                <li class="nav-button active"><a href="./07-mathematics-structure.html" class="active">Mathematics</a></li>
+                <li class="nav-button"><a href="./08-opportunities-structure.html">Opportunities</a></li>
             </ul>
-
+            
+            <!-- Menu -->
             <i id="hamburger-menu-icon" class="fa-solid fa-bars"></i>
         </div>
     </header>
-
-
-    <div class="opportunities-main">
-        
+    
+    
+    <!-- Conteúdo -->
+    <div id="opportunities-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 half-div bg-primary text-white">
+                    <h1>Div 1</h1>
+                    <p>This is the first half of the page.</p>
+                </div>
+                <div class="col-6 half-div bg-secondary text-white">
+                    <h1>Div 2</h1>
+                    <p>This is the second half of the page.</p>
+                </div>
+            </div>
+        </div>
     </div>
-
-
+    
+    
+    <!-- Footer -->
     <footer class="footer">
         <div id="footer-titles">
             <p class="footer-title">More from us</p>
@@ -110,5 +131,15 @@
 
         <p id="copyright-text" >&copy; 2024 The Bright Minds Journal. All rights reserved.</p>
     </footer>
+
+
+    <!-- Scripts locais -->
+    <script src="../scripts/03-home-script.js"></script>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>
