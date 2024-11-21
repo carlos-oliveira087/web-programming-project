@@ -84,6 +84,7 @@ header a {
     color: #fff;
     cursor: pointer;
     vertical-align: middle;
+    margin-right: 15px;
 }
 
 /* LINHA DE BAIXO DA HEADER */
@@ -146,25 +147,58 @@ header a {
     font-weight: bold;
 }
 
-/* Menu hambúrguer */
-#hamburger-menu-icon {
-    font-size: 25px;
+/* Estilo do menu hambúrguer (aberto) */
+#hamburger-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #001f3f;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    transition: right 0.1s ease-in-out;
+}
+
+#hamburger-menu ul {
+    list-style: none;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#hamburger-menu ul li {
+    margin-bottom: 10px;
+}
+
+#hamburger-menu ul li a {
     color: #fff;
-    margin-left: auto;
-    margin-right: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 5px;
 }
 
-#hamburger-menu-icon:hover {
+#hamburger-menu ul li a:hover {
     color: #eb7358;
+}
+
+#hamburger-menu-items {
+    margin-top: 80px;
+}
+
+/* Ícone do menu hamburguer */
+#hamburger-menu-icon {
+    font-size: 30px;
+    color: #fff;
     cursor: pointer;
+    position: absolute;
+    top: 35px;
+    right: 25px;
+    z-index: 2000;
 }
 
-#hamburger-menu-icon:active {
-    color: #eb7358;
-    transform: scale(0.80);
-}
-
-#hamburger-menu-icon.active {
+/* Efeito de hover no ícone do menu */
+#hamburger-menu-icon:hover {
     color: #eb7358;
 }
 
