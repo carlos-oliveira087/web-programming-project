@@ -1,54 +1,29 @@
 {
 "programs": [
 	{
-	"title": "AI Research Exchange in Canada",
-	"description": "Conduct AI research and collaborate with Canadian tech leaders. A unique opportunity for students passionate about AI.",
-	"type": "Exchange"
+		"title": "AI Research Exchange in Canada",
+		"description": "Conduct AI research and collaborate with Canadian tech leaders. A unique opportunity for students passionate about AI.",
+		"type": "Exchange"
 	},
 	{
-	"title": "Sustainable Energy Course in Denmark",
-	"description": "Study sustainable energy solutions in Denmark. Join a network of innovators focused on renewable technology.",
-	"type": "Course"
+		"title": "Sustainable Energy Course in Denmark",
+		"description": "Study sustainable energy solutions in Denmark. Join a network of innovators focused on renewable technology.",
+		"type": "Course"
 	},
 	{
-	"title": "Bioinformatics Exchange in Japan",
-	"description": "Learn bioinformatics in Japan, working alongside industry experts. Ideal for students in biology and data science.",
-	"type": "Exchange"
+		"title": "Bioinformatics Exchange in Japan",
+		"description": "Learn bioinformatics in Japan, working alongside industry experts. Ideal for students in biology and data science.",
+		"type": "Exchange"
 	},
 	{
-	"title": "Space Technology Workshop in the USA",
-	"description": "Engage in hands-on space technology projects with top aerospace experts in the USA. A must for future aerospace innovators.",
-	"type": "Workshop"
+		"title": "Space Technology Workshop in the USA",
+		"description": "Engage in hands-on space technology projects with top aerospace experts in the USA. A must for future aerospace innovators.",
+		"type": "Workshop"
 	},
 	{
-	"title": "Cybersecurity Seminar in Israel",
-	"description": "Immerse yourself in cybersecurity studies and attend lectures by top experts in Israel. Ideal for students looking to master security in the digital world.",
-	"type": "Lecture"
-	},
-	{
-	"title": "Robotics Engineering Course in South Korea",
-	"description": "Study and work in robotics engineering with South Korean experts. Perfect for students driven by automation technology.",
-	"type": "Course"
-	},
-	{
-	"title": "Environmental Science Exchange in New Zealand",
-	"description": "Explore environmental science and conservation efforts in New Zealand. Ideal for eco-conscious students.",
-	"type": "Exchange"
-	},
-	{
-	"title": "Quantum Computing Workshop in Switzerland",
-	"description": "Dive into quantum computing research and attend workshops in Switzerland. A rare opportunity for students keen on next-gen computing.",
-	"type": "Workshop"
-	},
-	{
-	"title": "Renewable Energy Program in Germany",
-	"description": "Join Germany’s top renewable energy initiatives and learn from industry leaders. Ideal for sustainable energy enthusiasts.",
-	"type": "Course"
-	},
-	{
-	"title": "Biotechnology Exchange in the Netherlands",
-	"description": "Participate in biotechnology projects and research in the Netherlands. Great for students in life sciences.",
-	"type": "Exchange"
+		"title": "Cybersecurity Seminar in Israel",
+		"description": "Immerse yourself in cybersecurity studies and attend lectures by top experts in Israel. Ideal for students looking to master security in the digital world.",
+		"type": "Lecture"
 	}
 ]
 }
