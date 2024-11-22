@@ -21,14 +21,12 @@ hr {
     justify-content: center;
     display: flex;
     gap: 125px;
-    margin-bottom: 60px;
 }
 
 #primary_section {
     width: 710px;
     height: 1010px;
     margin-left: 164px;
-    margin-bottom: 150px;
 }
 
 #secondary_section {
