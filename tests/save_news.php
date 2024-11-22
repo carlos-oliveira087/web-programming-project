@@ -1,7 +1,5 @@
 <?php
-    // SCRIPT PARA SALVAR AS NOTÍCIAS CADASTRADAS NO BANCO
-
-    include './db-connection.php';
+    include '../src/config/db-connection.php';
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 

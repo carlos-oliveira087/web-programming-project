@@ -3,15 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <!-- CSS local -->
     <link rel="stylesheet" href="../styles/09-create-style.css">
+    
+    <!-- CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Fonte da logo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sofia+Sans:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- Fonte do corpo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>Publish new article – Bright Minds</title>
 </head>
+
 <body>
 
+    <!-- Header -->
     <header class="header">
+        <!-- Logo, barra de pesquisa e login -->
         <div id="header-top">
             <a href="./03-home-structure.html" id="logo-link">
                 <div id="logo-container">
@@ -19,71 +38,84 @@
                     <span id="logo-text">Bright Minds</span>
                 </div>
             </a>
-
+            
             <div id="searchbar-container">
                 <input class="search-bar" type="text" placeholder="Search for educational news or insights...">
                 <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
             </div>
-
+            
             <div id="account-container">
                 <a id="login-text" href="#">Login</a>
                 <i id="user-icon" class="fa-regular fa-circle-user"></i>
             </div>
         </div>
-
+        
+        <!-- Abas de navegação por área de conhecimento -->
         <div id="header-bottom">
             <ul class="navigation-tabs">
-                <li class="nav-button active"><a href="./03-home-structure.html" class="active">Home</a></li>
+                <li class="nav-button"><a href="./03-home-structure.html">Home</a></li>
                 <li class="nav-button"><a href="./04-science-structure.html">Science</a></li>
                 <li class="nav-button"><a href="./05-technology-structure.html">Technology</a></li>
                 <li class="nav-button"><a href="./06-engineering-structure.html">Engineering</a></li>
                 <li class="nav-button"><a href="./07-mathematics-structure.html">Mathematics</a></li>
                 <li class="nav-button"><a href="./08-opportunities-structure.html">Opportunities</a></li>
             </ul>
-
+            
+            <!-- Menu hambúrguer (aberto) -->
+            <div id="hamburger-menu" class="hamburger-menu">
+                <div id="hamburger-menu-items">
+                    <ul>
+                        <li><a href="#">Publish new article</a></li>
+                        <li><a href="#">My published articles</a></li>
+                        <li><a href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Menu hambúrguer (ícone) -->
             <i id="hamburger-menu-icon" class="fa-solid fa-bars"></i>
         </div>
     </header>
 
 
+    <!-- Conteúdo principal -->
     <div id="main_div">
-
         <section id="title_box">
-            <h1 id="page_title">Submit Your News</h1>
-            <h2 id="page_subtitle">Share your story with us</h2>
+            <p id="page_title">Submit Your News</p>
+            <p id="page_subtitle">Share your story with us</p>
         </section>
 
+        <!-- Formulário de publicação -->
         <form action="../../config/db-create-news.php" method="post" enctype="multipart/form-data">
             <div id="container">
 
+                <!-- Categoria -->
                 <div id="aba1">
                     <section id="container_title">
                         <h2>First, tell us which category best fits your news:</h2>
                     </section> 
 
                     <section id="aba1_checkbox">
-                            
                             <div id="check_1">
                                 <input type="radio" name="category" id="science" required oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
-                                <label for="science"></label>Science
+                                <label for="science">Science</label>
                             </div>
 
                             <div id="check_1">
                                 <input type="radio" name="category" id="technology" oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
-                                <label for="technology"></label>Technology
+                                <label for="technology">Technology</label>
                             </div>
 
 
                             <div id="check_1">
                                 <input type="radio" name="category" id="engineering" oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
-                                <label for="engineering"></label>Engineering
+                                <label for="engineering">Engineering</label>
                             </div>
 
                             <div id="check_1">
                                 <input type="radio" name="category" id="mathematics" oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
-                                <label for="mathematics"></label>Mathematics
+                                <label for="mathematics">Mathematics</label>
                             </div>
-
                     </section>
 
                     <section>
@@ -95,9 +127,8 @@
                     </section> 
                 </div>
                     
-
+                <!-- Título e Autor -->
                 <div id="aba2" class="hidden">
-
                     <section id="container_title">
                         <h2>Give us some initial details about your news:</h2>
                     </section>
@@ -115,11 +146,10 @@
                         <button id="indicator0"></button>
                         <button id="indicator0"></button>
                     </section>
-
                 </div>
 
+                <!-- Corpo do artigo -->
                 <div id="aba3" class="hidden">
-
                     <section id="container_title">
                         <h2>Now, share the full report:</h2>
                     </section>
@@ -136,11 +166,10 @@
                         <button id="indicator1"></button>
                         <button id="indicator0"></button>
                     </section>
-
                 </div>
 
+                <!-- Imagem -->
                 <div id="aba4" class="hidden">
-
                     <section id="container_title">
                         <h2>Include images to illustrate your news:</h2>
                     </section>
@@ -151,7 +180,7 @@
 
                     <section id="file_area">
                         <label for="file" id="plus_icon">+</label>
-                        <input id="file" type="file" name="file[]" required multiple>
+                        <input id="file" type="file" name="image" required multiple>
                     </section>
 
                     <section>
@@ -162,13 +191,13 @@
                         <button id="indicator0"></button>
                         <button id="indicator1"></button>
                     </section>
-
                 </div>
             </div>    
         </form>
-
     </div>
 
+
+    <!-- Footer -->
     <footer class="footer">
         <div id="footer-titles">
             <p class="footer-title">More from us</p>
@@ -209,7 +238,7 @@
             </div>
             
         </div>
- 
+
         <a id="back-to-top-button" href="#header">BACK TO TOP</a>
 
         <hr>
@@ -217,6 +246,15 @@
         <p id="copyright-text" >&copy; 2024 The Bright Minds Journal. All rights reserved.</p>
     </footer>
 
-    <script src="../scripts/09-create-structure.js"></script>
+
+    <!-- Scripts locais -->
+    <script src="../scripts/hamburger-menu-script.js"></script>
+    <script src="../scripts/09-create-script.js"></script>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
 </body>
 </html>

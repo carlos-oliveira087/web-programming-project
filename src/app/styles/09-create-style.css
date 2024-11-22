@@ -1,3 +1,4 @@
+/* ESTILIZAÇÃO GERAL ------------------------------------------------------- */
 @import url('./global-styles.css');
 
 h1, h2 {
@@ -18,26 +19,32 @@ h1, h2 {
     align-items: center;
 }
 
+
+/* TÍTULOS DA PÁGINA ------------------------------------------------------- */
 #title_box {
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: auto;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 #page_title {
-    font-size: 41.8px;
+    font-size: 40px;
+    font-weight: 600;
     color: #384b70;
 }
 
 #page_subtitle {
-    font-size: 26.3px;
-    align-self: self-end;
-    margin-top: 10px;
+    font-size: 22px;
+    margin-top: -20px;
     color: #384b70;
 }
 
+
+/* CONTAINER DO FORMULÁRIO ------------------------------------------------- */
 #container {
     margin-top: 40px;
     background-color: #f2f2f2;
@@ -54,6 +61,8 @@ h1, h2 {
     color: #384b70;
 }
 
+
+/* CHECKBOX DE CATEGORIA --------------------------------------------------- */
 #aba1_checkbox {
     display: flex;
     flex-direction: column;
@@ -72,9 +81,6 @@ h1, h2 {
     margin-bottom: 24.7px;
 }
 
-#check_5 {
-    margin-bottom: 12px;
-}
 
 #aba1_checkbox input[type="radio"] {
     margin-right: 15px;
@@ -229,11 +235,12 @@ h1, h2 {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
+/*
 input[type='file'] {
     display: none;
 }
 
+*/
 #file_area {
     width: 450px;
     height: 148px;
