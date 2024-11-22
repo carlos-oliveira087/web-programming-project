@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Notícia</title>
+</head>
+<body>
+    <h1>Cadastrar Nova Notícia</h1>
+    <form action="save_news.php" method="POST" enctype="multipart/form-data">
+        <label for="category">Categoria:</label>
+        <select name="category" id="category" required>
+            <option value="Science">Science</option>
+            <option value="Technology">Technology</option>
+            <option value="Engineering">Engineering</option>
+            <option value="Mathematics">Mathematics</option>
+        </select>
+        <br><br>
+
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required>
+        <br><br>
+
+        <label for="author">Autor:</label>
+        <input type="text" id="author" name="author" required>
+        <br><br>
+
+        <label for="text">Texto:</label>
+        <textarea id="text" name="text" rows="6" required></textarea>
+        <br><br>
+        
+        <label for="image">Imagem (capa):</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+        <br><br>
+
+        <button type="submit">Salvar Notícia</button>
+    </form>
+</body>
+</html>
