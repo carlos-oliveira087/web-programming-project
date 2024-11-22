@@ -202,6 +202,10 @@ header a {
     color: #eb7358;
 }
 
+#hamburger-menu-icon:active {
+    transform: scale(1.2);
+}
+
 
 /* FOOTER ------------------------------------------------------------------ */
 footer {
