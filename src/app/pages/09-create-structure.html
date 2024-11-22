@@ -3,26 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="../styles/09-create-style.css">
-    
-    <!-- Fonte da logo -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <!-- Fonte do corpo -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
     <title>Document</title>
+    <link rel="stylesheet" href="../styles/09-create-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sofia+Sans:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <header class="header">
+        <div id="header-top">
+            <a href="./03-home-structure.html" id="logo-link">
+                <div id="logo-container">
+                    <img id="logo-img" src="../../../assets/logos/bright-minds-graphic.png" alt="Bright Minds Logo">
+                    <span id="logo-text">Bright Minds</span>
+                </div>
+            </a>
+
+            <div id="searchbar-container">
+                <input class="search-bar" type="text" placeholder="Search for educational news or insights...">
+                <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
+            </div>
+
+            <div id="account-container">
+                <a id="login-text" href="#">Login</a>
+                <i id="user-icon" class="fa-regular fa-circle-user"></i>
+            </div>
+        </div>
+
+        <div id="header-bottom">
+            <ul class="navigation-tabs">
+                <li class="nav-button active"><a href="./03-home-structure.html" class="active">Home</a></li>
+                <li class="nav-button"><a href="./04-science-structure.html">Science</a></li>
+                <li class="nav-button"><a href="./05-technology-structure.html">Technology</a></li>
+                <li class="nav-button"><a href="./06-engineering-structure.html">Engineering</a></li>
+                <li class="nav-button"><a href="./07-mathematics-structure.html">Mathematics</a></li>
+                <li class="nav-button"><a href="./08-opportunities-structure.html">Opportunities</a></li>
+            </ul>
+
+            <i id="hamburger-menu-icon" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+
     <div id="main_div">
 
         <section id="title_box">
@@ -30,119 +53,170 @@
             <h2 id="page_subtitle">Share your story with us</h2>
         </section>
 
-        <div id="container">
+        <form action="../../config/db-create-news.php" method="post">
+            <div id="container">
 
-            <div id="aba1">
-               <section id="aba1_title">
-                    <h2>First, tell us which category best fits your news:</h2>
-                </section>
+                <div id="aba1">
+                <section id="container_title">
+                        <h2>First, tell us which category best fits your news:</h2>
+                    </section> 
 
-                <section id="aba1_checkbox">
-                    <form>
-                        <p>
-                            <input type="radio" name="category" id="science">
-                            <label for="science"></label>Science</label>
-                        </p>
+                    <section id="aba1_checkbox">
+                            
+                            <div id="check_1">
+                                <input type="radio" name="category" id="science" required oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
+                                <label for="science"></label>Science
+                            </div>
 
-                        <p>
-                            <input type="radio" name="category" id="technology">
-                            <label for="technology"></label>Technology</label>
-                        </p>
+                            <div id="check_1">
+                                <input type="radio" name="category" id="technology" oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
+                                <label for="technology"></label>Technology
+                            </div>
 
-                        <p>
-                            <input type="radio" name="category" id="engineering">
-                            <label for="engineering"></label>Engineering</label>
-                        </p>
 
-                        <p>
-                            <input type="radio" name="category" id="mathematics">
-                            <label for="mathematics"></label>Mathematics</label>
-                        </p>
+                            <div id="check_1">
+                                <input type="radio" name="category" id="engineering" oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
+                                <label for="engineering"></label>Engineering
+                            </div>
 
-                        <p>
-                            <input type="radio" name="category" id="opportunities">
-                            <label for="opportunities"></label>Opportunities</label>
-                        </p>
-                    </form>
+                            <div id="check_1">
+                                <input type="radio" name="category" id="mathematics" oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
+                                <label for="mathematics"></label>Mathematics
+                            </div>
+
+                    </section>
+
+                    <section>
+                        <button type="button" id="button0">Next</button><br>
+                        <button id="indicator1"></button>
+                        <button id="indicator0"></button>
+                        <button id="indicator0"></button>
+                        <button id="indicator0"></button>
+                    </section> 
+                </div>
                     
-                </section>
 
-                <section>
-                    <button type="button" id="button0">Next</button><br>
-                    <button id="indicator1"></button>
-                    <button id="indicator2"></button>
-                    <button id="indicator3"></button>
-                    <button id="indicator4"></button>
-                </section> 
-            </div>
-                
+                <div id="aba2" class="hidden">
 
-            <div id="aba2" class="hidden">
+                    <section id="container_title">
+                        <h2>Give us some initial details about your news:</h2>
+                    </section>
 
-                <section>
-                    <h2>Give us some initial details about your news:</h2>
-                </section>
+                    <section id="inputs_area">
+                        <label id="text_label">Title:</label><input type="text" name="title" id="title" required oninvalid="this.setCustomValidity('Fill in the title field')" onchange="this.setCustomValidity('')">
+                        <label id="author_label">Author:</label><input type="text" name="author" id="author" required oninvalid="this.setCustomValidity('Fill in the author field')" onchange="this.setCustomValidity('')">
+                    </section>
 
-                <section>
-                    Title<br><input type="text" name="title" id="title"><br>
-                    Author<br><input type="text" name="author" id="author"><br>
-                </section>
+                    <section>
+                        <button type="button" id="button1">Back</button>
+                        <button type="button" id="button2">Next</button><br>
+                        <button id="indicator0"></button>
+                        <button id="indicator1"></button>
+                        <button id="indicator0"></button>
+                        <button id="indicator0"></button>
+                    </section>
 
-                <section>
-                    <button type="button" id="button1">Back</button>
-                    <button type="button" id="button2">Next</button><br>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                </section>
+                </div>
 
-            </div>
+                <div id="aba3" class="hidden">
 
-            <div id="aba3" class="hidden">
+                    <section id="container_title">
+                        <h2>Now, share the full report:</h2>
+                    </section>
 
-                <section>
-                    <h2>Now, share the full report:</h2>
-                </section>
+                    <section id="text_area">
+                        <label id="text_label">Text:</label><textarea id="text_space" required oninvalid="this.setCustomValidity('Fill in the title field')" onchange="this.setCustomValidity('')"></textarea>
+                    </section>
 
-                <section>
-                    Text:<br><textarea name="title" id="title"></textarea><br>
-                </section>
+                    <section>
+                        <button type="button" id="button1">Back</button>
+                        <button type="button" id="button2">Next</button><br>
+                        <button id="indicator0"></button>
+                        <button id="indicator0"></button>
+                        <button id="indicator1"></button>
+                        <button id="indicator0"></button>
+                    </section>
 
-                <section>
-                    <button type="button" id="button1">Back</button>
-                    <button type="button" id="button2">Next</button><br>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                </section>
+                </div>
 
-            </div>
+                <div id="aba4" class="hidden">
 
-            <div id="aba4" class="hidden">
+                    <section id="container_title">
+                        <h2>Include images to illustrate your news:</h2>
+                    </section>
 
-                <section>
-                    <h2>Include images to illustrate your news:</h2>
-                </section>
+                    <section id="file_label">
+                        <label for="file">Drop your file:</label> 
+                    </section>
 
-                <section>
-                    <input type="file">
-                </section>
+                    <section id="file_area">
+                        <label for="file" id="plus_icon">+</label>
+                        <input id="file" type="file" required multiple>
+                    </section>
 
-                <section>
-                    <button type="button" id="button1">Back</button>
-                    <button type="button" id="button2">Next</button><br>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                    <button></button>
-                </section>
+                    <section>
+                        <button type="button" id="button1">Back</button>
+                        <button type="button" id="button2">Next</button><br>
+                        <button id="indicator0"></button>
+                        <button id="indicator0"></button>
+                        <button id="indicator0"></button>
+                        <button id="indicator1"></button>
+                    </section>
 
-            </div>
-        </div>    
+                </div>
+            </div>    
+        </form>
 
     </div>
-    <script src="../js/09-create-structure.js"></script>
+
+    <footer class="footer">
+        <div id="footer-titles">
+            <p class="footer-title">More from us</p>
+            <p class="footer-title">Join our Newsletter</p>
+        </div>
+        
+        <div id="footer-content">
+            
+            <div id="more-container">
+                <div id="about-container">
+                    <p id="about-title">ABOUT</p>
+                    <p id="about-text">Bright Minds was created as the final project for the Web Programming course, Computer Science, 2024.2. </p>
+                </div>
+                
+                <div id="contact-container">
+                    <p id="contact-title">CONTACT</p>
+                    <a href="https://github.com/carlos-oliveira087/web-programming-project">
+                        <i class="fa-brands fa-github contact-icons"></i>
+                    </a>
+                    <a href="https://web.facebook.com/">
+                        <i class="fa-brands fa-facebook contact-icons"></i>
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <i class="fa-brands fa-instagram contact-icons"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div id="newsletter-container">
+                <p id="newsletter-text">Receive original reporting and incisive analysis, direct from us every morning.</p>
+                <div class="input-icon-wrapper">
+                    <input id="mail-list-bar" type="text" placeholder="Enter your e-mail address">
+                    <i id="mail-icon" class="fa-regular fa-envelope"></i>
+                </div>
+                <a href="">
+                    <button class="button-1">Subscribe</button>
+                </a>
+            </div>
+            
+        </div>
+ 
+        <a id="back-to-top-button" href="#header">BACK TO TOP</a>
+
+        <hr>
+
+        <p id="copyright-text" >&copy; 2024 The Bright Minds Journal. All rights reserved.</p>
+    </footer>
+
+    <script src="../scripts/09-create-structure.js"></script>
 </body>
 </html>
