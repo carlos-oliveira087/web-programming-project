@@ -1,44 +1,29 @@
 {
-  "internships": [
+"internships": [
     {
-      "title": "Software Engineering Intern",
-      "description": "Join our team to build and optimize software applications. Ideal for those passionate about coding and problem-solving. Apply today!"
+        "title": "Software Engineering Intern",
+        "description": "Join our team to build and optimize software applications. Ideal for those passionate about coding and problem-solving. Apply today!",
+        "type": "Internship"
     },
     {
-      "title": "Data Science Internship",
-      "description": "Analyze real-world data and develop insights with our data science team. A perfect fit for students interested in big data and analytics."
+        "title": "Data Science Internship",
+        "description": "Analyze real-world data and develop insights with our data science team. A perfect fit for students interested in big data and analytics.",
+        "type": "Internship"
     },
     {
-      "title": "Cybersecurity Intern",
-      "description": "Help protect digital assets and learn advanced security techniques. Ideal for students excited about cybersecurity."
+        "title": "Cybersecurity Specialist",
+        "description": "Help protect digital assets and implement advanced security measures. Ideal for professionals with a strong interest in cybersecurity.",
+        "type": "Full-time Job"
     },
     {
-      "title": "AI & Machine Learning Intern",
-      "description": "Work with AI experts to develop machine learning models and AI applications. Great for those interested in cutting-edge technology."
+        "title": "AI & Machine Learning Developer",
+        "description": "Develop machine learning models and AI applications for real-world challenges. Perfect for those skilled in AI technologies.",
+        "type": "Full-time Job"
     },
     {
-      "title": "Renewable Energy Internship",
-      "description": "Contribute to projects in clean energy and sustainability. Perfect for students committed to environmental innovation."
-    },
-    {
-      "title": "Biomedical Engineering Intern",
-      "description": "Support research in biomedical technology and healthcare solutions. Ideal for those focused on engineering in medicine."
-    },
-    {
-      "title": "Robotics Internship",
-      "description": "Collaborate on robotics design and testing. Hands-on experience for students passionate about automation and robotics."
-    },
-    {
-      "title": "Environmental Science Intern",
-      "description": "Engage in environmental research and sustainability projects. Suited for students dedicated to ecological preservation."
-    },
-    {
-      "title": "Chemical Engineering Intern",
-      "description": "Assist with chemical processes in a laboratory setting. A valuable experience for students interested in industrial chemistry."
-    },
-    {
-      "title": "Space Technology Intern",
-      "description": "Work on projects related to aerospace engineering and satellite technology. Perfect for aspiring aerospace engineers."
+        "title": "Renewable Energy Internship",
+        "description": "Contribute to projects in clean energy and sustainability. Perfect for students committed to environmental innovation.",
+        "type": "Internship"
     }
   ]
 }

@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS local -->
-    <link rel="stylesheet" href="../styles/stem-styles.css">
-
-    <!-- CSS do Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/08-opportunities-style.css">
 
     <!-- Fonte da logo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -56,8 +53,8 @@
                 <li class="nav-button"><a href="./04-science-structure.html">Science</a></li>
                 <li class="nav-button"><a href="./05-technology-structure.html">Technology</a></li>
                 <li class="nav-button"><a href="./06-engineering-structure.html">Engineering</a></li>
-                <li class="nav-button active"><a href="./07-mathematics-structure.html" class="active">Mathematics</a></li>
-                <li class="nav-button"><a href="./08-opportunities-structure.html">Opportunities</a></li>
+                <li class="nav-button"><a href="./07-mathematics-structure.html">Mathematics</a></li>
+                <li class="nav-button active"><a href="./08-opportunities-structure.html"  class="active">Opportunities</a></li>
             </ul>
             
             <!-- Menu hambúrguer (aberto) -->
@@ -78,16 +75,24 @@
     
     
     <!-- Conteúdo -->
+    <div id="page_title">
+        <p>Opportunities</p>
+    </div>
+    <hr>
     <div id="opportunities-content">
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-6 half-div bg-primary text-white">
-                    <h1>Div 1</h1>
-                    <p>This is the first half of the page.</p>
+            <div id="sections">
+                <div id="primary_section">
+                    <div id="first_title">
+                        <p>Learning Programs</p>
+                    </div>
+                    <div id="cards-container"></div>
                 </div>
-                <div class="col-6 half-div bg-secondary text-white">
-                    <h1>Div 2</h1>
-                    <p>This is the second half of the page.</p>
+                <div id="secondary_section">
+                    <div id="second_title">
+                        <p>Jobs</p>
+                    </div>
+                    <div id="cards-container-2"></div>
                 </div>
             </div>
         </div>
@@ -145,12 +150,7 @@
 
 
     <!-- Scripts locais -->
-    <script src="../scripts/hamburger-menu-script.js"></script>
-
-    <!-- Scripts do Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../scripts/08-opportunities-script.js"></script>
 
 </body>
 </html>
