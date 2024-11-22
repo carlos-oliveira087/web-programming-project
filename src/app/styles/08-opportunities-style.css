@@ -4,7 +4,7 @@
     margin-top: 56px;
     margin-bottom: 56px;
     margin-left: 194px;
-    font-size: 55px;
+    font-size: 45px;
     font-weight: 600;
 }
 
@@ -20,7 +20,7 @@ hr {
 #sections {
     justify-content: center;
     display: flex;
-    gap: 187px;
+    gap: 125px;
     margin-bottom: 60px;
 }
 
@@ -39,9 +39,9 @@ hr {
 }
 
 #first_title, #second_title {
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 #cards-container, #cards-container-2 {
@@ -55,8 +55,8 @@ hr {
 .card, .card2 {
     display: flex;
     flex-direction: column;
-    width: 706px;
-    height: 240px;
+    width: 600px;
+    height: 200px;
     border: 1px solid #ddd;
     border-radius: 12px;
     padding: 25px;
@@ -79,7 +79,7 @@ hr {
     
 .card p, .card2 p {
     margin-top: -8px;
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
 }
 
