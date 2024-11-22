@@ -53,11 +53,11 @@
             <h2 id="page_subtitle">Share your story with us</h2>
         </section>
 
-        <form action="../../config/db-create-news.php" method="post">
+        <form action="../../config/db-create-news.php" method="post" enctype="multipart/form-data">
             <div id="container">
 
                 <div id="aba1">
-                <section id="container_title">
+                    <section id="container_title">
                         <h2>First, tell us which category best fits your news:</h2>
                     </section> 
 
@@ -125,7 +125,7 @@
                     </section>
 
                     <section id="text_area">
-                        <label id="text_label">Text:</label><textarea id="text_space" required oninvalid="this.setCustomValidity('Fill in the title field')" onchange="this.setCustomValidity('')"></textarea>
+                        <label id="text_label">Text:</label><textarea id="text_space" name="text" required oninvalid="this.setCustomValidity('Fill in the title field')" onchange="this.setCustomValidity('')"></textarea>
                     </section>
 
                     <section>
@@ -151,12 +151,12 @@
 
                     <section id="file_area">
                         <label for="file" id="plus_icon">+</label>
-                        <input id="file" type="file" required multiple>
+                        <input id="file" type="file" name="file[]" required multiple>
                     </section>
 
                     <section>
                         <button type="button" id="button1">Back</button>
-                        <button type="button" id="button2">Next</button><br>
+                        <button type="submit" id="submitButton">Submit</button><br>
                         <button id="indicator0"></button>
                         <button id="indicator0"></button>
                         <button id="indicator0"></button>

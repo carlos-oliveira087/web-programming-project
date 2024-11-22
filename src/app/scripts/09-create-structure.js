@@ -40,6 +40,8 @@ function previousWindow() {
     }
 }
 
+
+
 document.querySelectorAll('#button0, #button2').forEach(button => {
     button.addEventListener('click', nextWindow);
 });
@@ -47,5 +49,6 @@ document.querySelectorAll('#button0, #button2').forEach(button => {
 document.querySelectorAll('#button1').forEach(button => {
     button.addEventListener('click', previousWindow);
 });
+
 
 
