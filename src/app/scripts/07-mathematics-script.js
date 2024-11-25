@@ -1,7 +1,7 @@
 // Função para chamar notícias de "Mathematics"
 async function loadMathematicsNews() {
     const apiKey = "pub_57846bcf486bcebc0bcf94e4446ef9477d814";
-    const apiUrl = `https://newsdata.io/api/1/news?apikey=${apikey}&q=mathematics&language=en&category=education,environment,other,science,technology`;
+    const apiUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&q=mathematics&language=en&category=education,environment,other,science,technology`;
     
     try {
         const response = await fetch(apiUrl);
