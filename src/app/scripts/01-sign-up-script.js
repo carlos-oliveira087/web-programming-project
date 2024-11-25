@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const email = document.getElementById('email').value;
         const password = document.getElementById('password').value;
+        const name = document.getElementById('name').value;
         const confirmation = document.getElementById('confirmation').value;
 
         if (password !== confirmation) {
@@ -11,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
 
-
         localStorage.setItem('email', email);
+        localStorage.setItem('name', name);
         localStorage.setItem('isLoggedIn', 'true');
 
         alert('User registered successfully!');

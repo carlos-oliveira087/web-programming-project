@@ -12,3 +12,24 @@ hamburgerMenuIcon.addEventListener('click', function() {
         hamburgerMenu.style.right = '-250px';
     }
 });
+
+
+// SCRIPT PARA APARECER NOME CADASTRADO NO LOGIN
+const loggedIn = document.getElementById('logged-account');
+const notLoggedin = document.getElementById('account');
+const usernameElement = document.getElementById('username');
+
+const isLoggedIn = localStorage.getItem('isLoggedIn');
+
+
+if (isLoggedIn === 'true') {
+    const userName = localStorage.getItem('name');
+    usernameElement.textContent = `Welcome, ${userName}`;
+    
+    loggedIn.style.display = 'block';
+    notLoggedin.style.display = 'none';
+} else {
+    loggedIn.style.display = 'none';
+    notLoggedin.style.display = 'block';
+}
+
