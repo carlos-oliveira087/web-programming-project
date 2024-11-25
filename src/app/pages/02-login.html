@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../styles/02-login-style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    
+    <header>
+
+    </header>
+    
+    <section class="everything">
+        
+        <div class="leftside">
+
+        </div>
+
+        <div class="rightside">
+            
+
+            <div class="form-box">
+                
+                <div class="tittle">
+                    <h2>Welcome back</h2>
+                    <img src="../../../assets/images/icon-image5.png" alt="login-icon   " class="icone" id="icone">
+                </div>
+                
+                <form action="../controllers/02-credentials_check.php" method="POST">
+                    <label class="label" for="email">E-mail:</label><br>
+                    <input class="input" input type="email" name="email" id="email" placeholder="E-mail" required><br><br>
+                    <label class="label" for="password">Password:</label><br>
+                    <input class="input" type="password" name="password" id="password" placeholder="Password" required><br><br><br>
+                
+                    <div class="botao">
+                        <button id="button-text" type="submit">Sign In</button>
+                    </div>
+
+
+                    <div class="redirect">
+                        <p>Don't have an account? Click <a href="01-sign-up.html"> here</a></p>
+                    </div>
+
+
+
+                </form>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <footer>
+
+    </footer>
+<script src="../scripts/02-login-script.js"></script>
+</body>
+
+
+
+
+</html>
