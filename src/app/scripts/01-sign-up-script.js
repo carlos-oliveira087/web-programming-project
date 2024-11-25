@@ -2,36 +2,27 @@ document.querySelector('form').addEventListener('submit', async function (event)
 
     event.preventDefault();
 
-
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    const formData = new FormData();
-
-    formData.append('name', name);
-    formData.append('email', email);
-    formData.append('password', password);
-
+    
     try {
         const response = await fetch('../controllers/01-create_user.php', {
             method: 'POST',
             body: formData,
         });
 
+        if(!response.ok)    {
+            throw new Error('HTTP Error! Check your php file.')
+        }
+
         const result = await response.json();
 
-        if(result.status === 'success') {
-            localStorage.setItem('name', result.name);
-            localStorage.setItem('email', result.email);
-            localStorage.setItem('password', result.password);
+        if(result.status === 'sucess')  {
+            alert(result.message);
 
-            alert('User created successfuly! Redirecting...');
-            window.location.href = '../pages/02-login.html';
+            window.location.href = '../pages/02-login.html'
         }
 
         else    {
-            alert(result.message);
+            alert('Failed to create account. Check your inputs.')
         }
 
     } catch (error) {

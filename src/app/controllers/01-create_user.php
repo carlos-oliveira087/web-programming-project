@@ -1,20 +1,52 @@
 <?php
 
-session_start();
+use Respect\Validation\Validator as verify;
 
-if($_SERVER['REQUEST_METHOD'] == 'POST')    {
-    $name = $_POST['name'] ?? '';
-    $email = $_POST['email'] ?? '';
-    $password = $_POST['password'] ?? '';
 
-    echo json_encode([
-        'status' => 'success',
-        'message' => 'Credentials are valid',
-        'name' => $name,
-        'email' => $email,
-        'password' => $password
+function validateName($name)    {
+    return verify::stringType()
+            ->notEmpty()
+            ->length(2, 50)
+            ->alpha(' ')
+            ->validate($name);
+}
+
+function validateEmail($email)   {
+    return verify::email()
+            ->validate($email);
+}
+
+//function validatePassword($password)    {
+//    return verify::stringType()
+            //->lenght(8, null)
+            //->regex('/[a-z]')
+            //->regex('/[0-9]')
+            //->regex('/[W]/')
+            //->validate($password);
+//}
+
+
+$name = '';
+$email = '';
+$password = '';
+
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (validateName($name) && validateEmail($email)) {
+        echo json_encode([
+            'status' => 'success',
+            'message' => 'Credentials are valid!',
+            'name' => $name,
+            'email' => $email,
+            'password' => $password
         ]);
-
-    exit;
+        exit;
+    } else {
+        echo json_encode([
+            'status' => 'error',
+            'message' => 'Invalid input. Check your data.'
+        ]);
+        exit;
+    }
 }
 ?>
