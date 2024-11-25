@@ -1,120 +1,126 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Robot';
+/* ESTILIZAÇÃO GERAL ------------------------------------------------------- */
+@import url('./global-styles.css');
 
-    }
-    
-    .signup-page-content     {
-        display: flex;
-        height: 100vh;
-    }
+.login-page-content {
+    display: flex;
+    height: 100vh;
+}
 
-    .leftside   {
-        flex: 1;
-        background-image: url(../../../assets/images/background-image4.jpg);
-        background-size: cover;
-        background-position: center;
-        width: 50%;
-    }
+/* Lado com a imagem */
+.leftside   {
+    flex: 1;
+    background-image: url("../../../assets/images/background-image4.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.5) !important;
+    z-index: 1;
+}
 
-    .rightside  {
-        flex: 1;
-        width: 50%;
-        background-color: #384b70;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .form-box   {
-        display: flex;
-        background-color: #001f3f;
-        border-radius: 30px;
-        width: 50%;
-        padding: 30px;
-        height: 380px;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-    }
-
-    .title {
-        color: white;
-        align-self: center;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+/* Lado com o formulário */
+.rightside  {
+    flex: 1;
+    width: 50%;
+    background-color: #384b70;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 
-    }
+/* FORMULÁRIO -------------------------------------------------------------- */
+/* Container do formulário */
+.form-box   {
+    display: flex;
+    background-color: #001f3f;
+    border-radius: 30px;
+    width: 50%;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5);
+}
 
-    .label  {
-        color: white;
-        font-size: 16px;
-        font-weight: bold;
-    }
+/* Título do formulário e ícone */
+.title-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    text-align: center;
+}
 
+#title-text {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
 
-    .input  {
-        font-family: 'Robot';
-        border-radius: 30px;
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-        margin: 5px;
-    }
-    
-    
-    .signup-login-button  {
-        justify-content: center;
-        width: 100%;
-        text-align: center;
-        align-items: center;
+#bright-minds-logo-signup {
+    max-width: 100px;
+    height: auto;
+    margin-left: 30px;
+}
 
-    }
-    
-    #button-text {
-        text-align: center;
-        font-size: 16px;
+/* Campos do formulário */
+.label-text  {
+    color: white;
+    font-size: 16px;
+    margin-left: 15px;
+}
 
-    }
-    
-    .signup-login-button button{
-        border-radius: 20px;
-        background-color: #508c9b;
-        width: 100%;
-        padding: 15px;
-        cursor: pointer;
-        text-align: center;
-        border: 3px solid #508c9b;
-        
+.input-field  {
+    width: 300px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    padding: 8px;
+    margin: 5px;
+    margin-bottom: 18px;
+    margin-left: 10px;
+    padding-left: 15px;
+}
 
-    }
+.input-field::placeholder{
+    font-style: italic;
+    margin-left: 10px;
+}
 
+/* Botões e redirecionamento */
+.signup-login-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
-    #email.input    {
-        width: 250px;
-    }
+.signup-login-button button {
+    background-color: #508c9b;
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    margin: 10px auto;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
 
+.signup-login-button button:hover {
+    background-color: #eb7358 !important;
+}
 
-    .icone    {
-        display: flex;
-        width: 10%;
-        color: #508c9b;
-        margin-left: 20px;
-        justify-content: center;
-    }
+#button-text {
+    font-size: 18px;
+    background-color: #508c9b;
+}
 
-    form   {
-        margin-top: 15px;
-    }
-
-    .redirect   {
-        color: white;
-        padding-top: 10px;
-        display: flex;
-        justify-content: center;
-    }
+.redirect   {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 3px;
+}

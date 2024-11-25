@@ -1,7 +1,7 @@
 /* ESTILIZAÇÃO GERAL ------------------------------------------------------- */
 @import url('./global-styles.css');
 
-.everything, .signup-page-content {
+.signup-page-content {
     display: flex;
     height: 100vh;
 }
