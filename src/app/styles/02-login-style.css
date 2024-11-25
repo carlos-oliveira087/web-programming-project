@@ -6,7 +6,7 @@
 
     }
     
-    .everything     {
+    .signup-page-content     {
         display: flex;
         height: 100vh;
     }
@@ -41,7 +41,7 @@
 
     }
 
-    .tittle {
+    .title {
         color: white;
         align-self: center;
         display: flex;
@@ -68,7 +68,7 @@
     }
     
     
-    .botao  {
+    .signup-login-button  {
         justify-content: center;
         width: 100%;
         text-align: center;
@@ -82,7 +82,7 @@
 
     }
     
-    .botao button{
+    .signup-login-button button{
         border-radius: 20px;
         background-color: #508c9b;
         width: 100%;

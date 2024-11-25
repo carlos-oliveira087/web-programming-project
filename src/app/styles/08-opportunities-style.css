@@ -17,19 +17,19 @@ hr {
     margin-top: 70px;
 }
 
-#sections {
+#divs {
     justify-content: center;
     display: flex;
     gap: 125px;
 }
 
-#primary_section {
+#primary_div {
     width: 710px;
     height: 1010px;
     margin-left: 164px;
 }
 
-#secondary_section {
+#secondary_div {
     width: 710px;
     height: 1010px;
     margin-right: 164px;

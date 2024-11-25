@@ -27,7 +27,7 @@ document.querySelector('form').addEventListener('submit', async function (event)
             localStorage.setItem('password', result.password);
 
             alert('User created successfuly! Redirecting...');
-            window.location.href = '../pages/02-login.html';
+            window.location.href = '../pages/02-login-structure.html';
         }
 
         else    {

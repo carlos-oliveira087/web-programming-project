@@ -1,0 +1,130 @@
+/* ESTILIZAÇÃO GERAL ------------------------------------------------------- */
+@import url('./global-styles.css');
+
+.everything, .signup-page-content {
+    display: flex;
+    height: 100vh;
+}
+
+/* Lado com a imagem */
+.leftside   {
+    display: flex;
+    flex: 1;
+    background-image: url("../../../assets/images/background-image4.jpg");
+    background-size: cover;
+    background-position: center;
+    box-shadow: 5px 0 20px rgba(0, 0, 0, 0.5) !important;
+    z-index: 1;
+}
+
+/* Lado com o formulário */
+.rightside  {
+    display: flex;
+    flex: 1;
+    background-color: #384b70;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/* FORMULÁRIO -------------------------------------------------------------- */
+/* Container do formulário */
+.form-box   {
+    width: 50%;
+    display: flex;
+    background-color: #001f3f;
+    border-radius: 30px;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* Título do formulário e ícone */
+.title-container {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+#title-text {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#bright-minds-logo-signup {
+    max-width: 100px;
+    height: auto;
+    margin-left: 30px;
+}
+
+/* Campos do formulário */
+.form-field {
+    margin-bottom: 8px;
+}
+
+.label-text {
+    color: white;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.input-field {
+    width: 300px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    padding: 8px;
+    margin: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding-left: 15px;
+}
+
+.input-field::placeholder{
+    font-style: italic;
+    margin-left: 10px;
+}
+
+/* Botões e redirecionamento */
+.signup-login-button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.signup-login-button button {
+    background-color: #508c9b;
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    margin: 10px auto;
+    padding: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-login-button button:hover {
+    background-color: #eb7358 !important;
+}
+
+#button-text {
+    font-size: 18px;
+    background-color: #508c9b;
+}
+
+.redirect  {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+    margin-top: 3px;
+}
