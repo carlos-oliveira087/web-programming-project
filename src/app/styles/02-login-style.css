@@ -1,0 +1,120 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Robot';
+
+    }
+    
+    .everything     {
+        display: flex;
+        height: 100vh;
+    }
+
+    .leftside   {
+        flex: 1;
+        background-image: url(../../../assets/images/background-image4.jpg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+    }
+
+    .rightside  {
+        flex: 1;
+        width: 50%;
+        background-color: #384b70;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-box   {
+        display: flex;
+        background-color: #001f3f;
+        border-radius: 30px;
+        width: 50%;
+        padding: 30px;
+        height: 380px;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .tittle {
+        color: white;
+        align-self: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+    }
+
+    .label  {
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+
+    .input  {
+        font-family: 'Robot';
+        border-radius: 30px;
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        margin: 5px;
+    }
+    
+    
+    .botao  {
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+
+    }
+    
+    #button-text {
+        text-align: center;
+        font-size: 16px;
+
+    }
+    
+    .botao button{
+        border-radius: 20px;
+        background-color: #508c9b;
+        width: 100%;
+        padding: 15px;
+        cursor: pointer;
+        text-align: center;
+        border: 3px solid #508c9b;
+        
+
+    }
+
+
+    #email.input    {
+        width: 250px;
+    }
+
+
+    .icone    {
+        display: flex;
+        width: 10%;
+        color: #508c9b;
+        margin-left: 20px;
+        justify-content: center;
+    }
+
+    form   {
+        margin-top: 15px;
+    }
+
+    .redirect   {
+        color: white;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
