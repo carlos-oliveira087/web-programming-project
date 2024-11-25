@@ -4,11 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <style>
+        .custom-card {
+            max-width: 200px;
+            margin: 10px auto;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .custom-card img {
+            max-height: 100px;
+            object-fit: cover;
+        }
+
+        #news-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 0 120px;
+            flex: 1 1 calc(33.33% - 15px);
+        }
+
+        .custom-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+
+
     <!-- CSS local -->
     <link rel="stylesheet" href="../styles/stem-styles.css">
     
     <!-- CSS do Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Fonte da logo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,7 +88,18 @@
                 <li class="nav-button"><a href="./08-opportunities-structure.html">Opportunities</a></li>
             </ul>
             
-            <!-- Menu -->
+            <!-- Menu hambúrguer (aberto) -->
+            <div id="hamburger-menu" class="hamburger-menu">
+                <div id="hamburger-menu-items">
+                    <ul>
+                        <li><a href="./09-create-structure.html">Publish new article</a></li>
+                        <li><a href="#">My published articles</a></li>
+                        <li><a href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Menu hambúrguer (ícone) -->
             <i id="hamburger-menu-icon" class="fa-solid fa-bars"></i>
         </div>
     </header>
@@ -98,9 +137,10 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- Cards de notícias -->
+        
+        <div id="news-container" class="row">
+            <!-- Os cards serão adicionados aqui dinamicamente -->
+        </div>
     </div>
     
     
@@ -155,7 +195,8 @@
 
 
     <!-- Scripts locais -->
-    <script src="../scripts/03-home-script.js"></script>
+    <script src="../scripts/hamburger-menu-script.js"></script>
+    <script src="../scripts/04-science-script.js"></script>
 
     <!-- Scripts do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
