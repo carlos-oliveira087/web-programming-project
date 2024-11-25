@@ -18,8 +18,4 @@ document.querySelector('form').addEventListener('submit', async function (event)
     else    {
         alert('Invalid email or password. Please try again.');
     }
-
-
-
-    
 });

@@ -37,7 +37,7 @@
 
         if ($stmt->execute()) {
             echo "<script>
-                alert('Sign up successful!');
+                alert('Account created succesfully!');
                 setTimeout(function() {
                     window.location.href = '../app/pages/02-login-structure.html';
                 }, 2000); // 2 seconds delay before redirection
