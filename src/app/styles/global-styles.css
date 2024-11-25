@@ -144,17 +144,17 @@ header a {
 }
 
 .nav-button a.active {
-    text-transform: uppercase;
     font-weight: bold;
 }
 
 .nav-button:hover {
     border-bottom: 4px solid #508c9b;
     cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
 }
 
 .nav-button:hover a {
-    text-transform: uppercase; 
     font-weight: bold;
     text-decoration: none;
     color: #eb7358;
@@ -170,7 +170,7 @@ header a {
     background-color: #001f3f;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    transition: right 0.1s ease-in-out;
+    transition: right 0.2s ease-in-out;
 }
 
 #hamburger-menu ul {
