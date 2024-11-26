@@ -12,7 +12,6 @@
             exit();
         }
 
-        // Consultando o BD
         $sql = "SELECT * FROM user_table WHERE user_email = ?";
         $stmt = $conn->prepare($sql);
 
@@ -22,7 +21,6 @@
         }
 
         $stmt->bind_param("s", $email);
-
         $stmt->execute();
         $result = $stmt->get_result();
 
@@ -31,10 +29,8 @@
 
             if (password_verify($password, $user['user_password'])) {
                 echo "<script>
-                        alert('Account created succesfully!');
-                        setTimeout(function() {
-                            window.location.href = '../pages/03-home-structure.html';
-                        }, 2000); // 2 seconds delay before redirection
+                        alert('Login successful!');
+                        window.location.href = '../pages/03-home-structure.html';
                     </script>";
             } else {
                 echo "<script>alert('Incorrect password. Please try again.'); window.history.back();</script>";
