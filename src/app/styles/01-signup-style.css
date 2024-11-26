@@ -1,44 +1,44 @@
 /* ESTILIZAÇÃO GERAL ------------------------------------------------------- */
 @import url('./global-styles.css');
 
-.login-page-content {
+.signup-page-content {
     display: flex;
     height: 100vh;
 }
 
 /* Lado com a imagem */
 .leftside   {
+    display: flex;
     flex: 1;
     background-image: url("../../../assets/images/background-image4.jpg");
     background-size: cover;
     background-position: center;
-    width: 50%;
     box-shadow: 5px 0 20px rgba(0, 0, 0, 0.5) !important;
     z-index: 1;
 }
 
 /* Lado com o formulário */
 .rightside  {
-    flex: 1;
-    width: 50%;
-    background-color: #384b70;
     display: flex;
-    align-items: center;
+    flex: 1;
+    background-color: #384b70;
     justify-content: center;
+    align-items: center;
+
 }
 
 
 /* FORMULÁRIO -------------------------------------------------------------- */
 /* Container do formulário */
 .form-box   {
+    width: 50%;
     display: flex;
     background-color: #001f3f;
     border-radius: 30px;
-    width: 50%;
     padding: 30px;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.5);
 }
 
@@ -54,7 +54,7 @@
 
 #title-text {
     font-size: 30px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #bright-minds-logo-signup {
@@ -64,20 +64,24 @@
 }
 
 /* Campos do formulário */
-.label-text  {
+.form-field {
+    margin-bottom: 8px;
+}
+
+.label-text {
     color: white;
     font-size: 16px;
     margin-left: 15px;
 }
 
-.input-field  {
+.input-field {
     width: 300px;
     font-size: 16px;
     border: none;
     border-radius: 30px;
     padding: 8px;
     margin: 5px;
-    margin-bottom: 18px;
+    margin-bottom: 10px;
     margin-left: 10px;
     padding-left: 15px;
 }
@@ -117,7 +121,7 @@
     background-color: #508c9b;
 }
 
-.redirect   {
+.redirect  {
     display: flex;
     justify-content: center;
     color: white;

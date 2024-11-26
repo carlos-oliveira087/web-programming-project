@@ -405,14 +405,14 @@ footer hr {
 
 /* SEÇÃO LATEST */
 /* Título de seção Latest (mais recente) */
-.latest-section-title {
+.latest-div-title {
     font-size: 28px;
     font-weight: 500;
 }
 
 /* SEÇÃO TRENDING */
 /* Título de seção Trending (em alta) */
-.trending-section-title {
+.trending-div-title {
     font-size: 22px;
     font-weight: 500;
 }

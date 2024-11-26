@@ -28,15 +28,15 @@
                         VALUES ('$category', '$title', '$author', '$text', '$image_path', '$creation_date')";
 
                 if (mysqli_query($conn, $sql)) {
-                    echo "Notícia cadastrada com sucesso!";
+                    echo "<script>alert('News successfully registered!');</script>";
                 } else {
-                    echo "Erro ao cadastrar notícia: " . mysqli_error($conn);
+                    echo "<script>alert('Error registering news: " . mysqli_error($conn) . "');</script>";
                 }
             } else {
-                echo "Erro ao fazer upload da imagem.";
+                echo "<script>alert('Error uploading image.');</script>";
             }
         } else {
-            echo "Por favor, envie uma imagem válida.";
+            echo "<script>alert('Please upload a valid image.');</script>";
         }
     }
 

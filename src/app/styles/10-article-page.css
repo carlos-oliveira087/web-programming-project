@@ -21,7 +21,7 @@
     margin: 0;
     padding: 0;
 }
-.comment-section {
+.comment-div {
     max-width: 600px;
     margin: 50px auto;
     background: #fff;
@@ -30,7 +30,7 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.comment-section h2 {
+.comment-div h2 {
     font-size: 24px;
     margin-bottom: 15px;
 }
