@@ -81,10 +81,10 @@
 
     <!-- Conteúdo principal -->
     <div id="main_div">
-        <section id="title_box">
+        <div id="title_box">
             <p id="page_title">Submit Your News</p>
             <p id="page_subtitle">Share your story with us</p>
-        </section>
+        </div>
 
         <!-- Formulário de publicação -->
         <form action="../../config/db-create-news.php" method="post" enctype="multipart/form-data">
@@ -92,11 +92,11 @@
 
                 <!-- Categoria -->
                 <div id="aba1">
-                    <section id="container_title">
+                    <div id="container_title">
                         <h2>First, tell us which category best fits your news:</h2>
-                    </section> 
+                    </div> 
 
-                    <section id="aba1_checkbox">
+                    <div id="aba1_checkbox">
                             <div id="check_1">
                                 <input type="radio" name="category" id="science" required oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
                                 <label id="science_label" for="science">Science</label>
@@ -117,81 +117,81 @@
                                 <input type="radio" name="category" id="mathematics" oninvalid="this.setCustomValidity('Select an option')" onchange="this.setCustomValidity('')">
                                 <label for="mathematics">Mathematics</label>
                             </div>
-                    </section>
+                    </div>
 
-                    <section>
+                    <div>
                         <button type="button" id="button0">Next</button><br>
                         <button id="indicator1"></button>
                         <button id="indicator0"></button>
                         <button id="indicator0"></button>
                         <button id="indicator0"></button>
-                    </section> 
+                    </div> 
                 </div>
                     
                 <!-- Título e Autor -->
                 <div id="aba2" class="hidden">
-                    <section id="container_title">
+                    <div id="container_title">
                         <h2>Give us some initial details about your news:</h2>
-                    </section>
+                    </div>
 
-                    <section id="inputs_area">
+                    <div id="inputs_area">
                         <label id="text_label">Title:</label><input type="text" name="title" id="title" required oninvalid="this.setCustomValidity('Fill in the title field')" onchange="this.setCustomValidity('')">
                         <label id="author_label">Author:</label><input type="text" name="author" id="author" required oninvalid="this.setCustomValidity('Fill in the author field')" onchange="this.setCustomValidity('')">
-                    </section>
+                    </div>
 
-                    <section>
+                    <div>
                         <button type="button" id="button1">Back</button>
                         <button type="button" id="button2">Next</button><br>
                         <button id="indicator0"></button>
                         <button id="indicator1"></button>
                         <button id="indicator0"></button>
                         <button id="indicator0"></button>
-                    </section>
+                    </div>
                 </div>
 
                 <!-- Corpo do artigo -->
                 <div id="aba3" class="hidden">
-                    <section id="container_title">
+                    <div id="container_title">
                         <h2>Now, share the full report:</h2>
-                    </section>
+                    </div>
 
-                    <section id="text_area">
+                    <div id="text_area">
                         <label id="text_label">Text:</label><textarea id="text_space" name="text" required oninvalid="this.setCustomValidity('Fill in the title field')" onchange="this.setCustomValidity('')"></textarea>
-                    </section>
+                    </div>
 
-                    <section>
+                    <div>
                         <button type="button" id="button1">Back</button>
                         <button type="button" id="button2">Next</button><br>
                         <button id="indicator0"></button>
                         <button id="indicator0"></button>
                         <button id="indicator1"></button>
                         <button id="indicator0"></button>
-                    </section>
+                    </div>
                 </div>
 
                 <!-- Imagem -->
                 <div id="aba4" class="hidden">
-                    <section id="container_title">
+                    <div id="container_title">
                         <h2>Include images to illustrate your news:</h2>
-                    </section>
+                    </div>
 
-                    <section id="file_label">
+                    <div id="file_label">
                         <label for="file">Drop your file:</label> 
-                    </section>
+                    </div>
 
-                    <section id="file_area">
+                    <div id="file_area">
                         <label for="file" id="plus_icon">+</label>
                         <input id="file" type="file" name="image" required multiple>
-                    </section>
+                    </div>
 
-                    <section>
+                    <div>
                         <button type="button" id="button1">Back</button>
                         <button type="submit" id="submitButton">Submit</button><br>
                         <button id="indicator0"></button>
                         <button id="indicator0"></button>
                         <button id="indicator0"></button>
                         <button id="indicator1"></button>
-                    </section>
+                    </div>
                 </div>
             </div>    
         </form>
