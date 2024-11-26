@@ -80,6 +80,8 @@ header a {
     line-height: 50px;
     margin-right: 15px;
     text-decoration: none;
+    cursor: default;
+    color: #fff;
 }
 
 /* Conta deslogada */
@@ -92,6 +94,13 @@ header a {
     line-height: 50px;
     margin-right: 15px;
     text-decoration: none;
+    transition: transform 0.25s ease;
+}
+
+#login-text:hover {
+    transform: scale(1.15);
+    transition: transform 0.25s ease;
+    color: #eb7358;
 }
 
 /* Ícone de perfil */
@@ -125,6 +134,7 @@ header a {
 .nav-button {
     padding: 0;
     margin: 0;
+    transition: transform 0.4s ease;
 }
 
 .nav-button a {
@@ -200,7 +210,7 @@ header a {
 }
 
 /* Ícone do menu hamburguer */
-#hamburger-menu-icon {
+#hamburger-menu-icon, #x-menu-icon {
     font-size: 30px;
     color: #fff;
     cursor: pointer;
@@ -208,15 +218,16 @@ header a {
     top: 35px;
     right: 25px;
     z-index: 2000;
+    transition: transform 0.25s ease;
 }
+
+
 
 /* Efeito de hover no ícone do menu */
-#hamburger-menu-icon:hover {
+#hamburger-menu-icon:hover, #x-menu-icon:hover {
     color: #eb7358;
-}
-
-#hamburger-menu-icon:active {
-    transform: scale(1.2);
+    transform: scale(1.15);
+    transition: transform 0.25s ease;
 }
 
 
