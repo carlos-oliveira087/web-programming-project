@@ -1,41 +1,22 @@
-document.querySelector('form').addEventListener('submit', async function (event) {
+document.addEventListener('DOMContentLoaded', function () {
+    document.getElementById('sign-up-form').addEventListener('submit', function(event) {
+        event.preventDefault();  
 
-    event.preventDefault();
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const name = document.getElementById('name').value;
+        const confirmation = document.getElementById('confirmation').value;
 
-
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    const formData = new FormData();
-
-    formData.append('name', name);
-    formData.append('email', email);
-    formData.append('password', password);
-
-    try {
-        const response = await fetch('../controllers/01-create_user.php', {
-            method: 'POST',
-            body: formData,
-        });
-
-        const result = await response.json();
-
-        if(result.status === 'success') {
-            localStorage.setItem('name', result.name);
-            localStorage.setItem('email', result.email);
-            localStorage.setItem('password', result.password);
-
-            alert('User created successfuly! Redirecting...');
-            window.location.href = '../pages/02-login.html';
+        if (password !== confirmation) {
+            alert('Passwords do not match!');
+            return;
         }
 
-        else    {
-            alert(result.message);
-        }
+        localStorage.setItem('email', email);
+        localStorage.setItem('name', name);
+        localStorage.setItem('isLoggedIn', 'true');
 
-    } catch (error) {
-        console.error('Error: ', error)
-        alert('An error occurred. Please try again later.');
-    }
+        alert('User registered successfully!');
+        window.location.href = '02-login.html';
+    });
 });
