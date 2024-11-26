@@ -68,4 +68,28 @@
 }
 
 
-/* OUTROS ----------------------------------------------------------- */
+/* CARDS CUSTOMIZADOS ----------------------------------------------------------- */
+
+.custom-card {
+    max-width: 200px;
+    margin: 10px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.custom-card img {
+    max-height: 100px;
+    object-fit: cover;
+}
+
+#news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 120px;
+    flex: 1 1 calc(33.33% - 15px);
+}
+
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

@@ -29,6 +29,7 @@ header a {
 #logo-container {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 #logo-img {
@@ -41,6 +42,10 @@ header a {
     font-weight: bold;
     font-size: 24px;
     margin-left: 7px;
+}
+
+#logo-link {
+    text-decoration: none;
 }
 
 /* Barra de pesquisa */
@@ -67,7 +72,17 @@ header a {
     font-size: 16px;
 }
 
-/* Conta */
+/* Conta logada */
+#username {
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    line-height: 50px;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+/* Conta deslogada */
 #login-text {
     font-size: 18px;
     font-weight: bold;
@@ -76,6 +91,7 @@ header a {
     vertical-align: middle;
     line-height: 50px;
     margin-right: 15px;
+    text-decoration: none;
 }
 
 /* Ícone de perfil */
@@ -106,22 +122,17 @@ header a {
     flex-grow: 1;
 }
 
-.nav-button-links:hover {
-    text-decoration: none;
-}
-
-.nav-button:hover {
-    text-decoration: none;
-
-}
-
 .nav-button {
-    text-decoration: none;
-    padding: 15px 50px;
-    position: relative;
+    padding: 0;
+    margin: 0;
 }
 
 .nav-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px 50px;
     color: #fff;
     font-size: 16px;
     position: relative;
@@ -133,18 +144,20 @@ header a {
 }
 
 .nav-button a.active {
-    text-transform: uppercase;
     font-weight: bold;
 }
 
 .nav-button:hover {
     border-bottom: 4px solid #508c9b;
     cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.4s ease;
 }
 
 .nav-button:hover a {
-    text-transform: uppercase; 
     font-weight: bold;
+    text-decoration: none;
+    color: #eb7358;
 }
 
 /* Estilo do menu hambúrguer (aberto) */
@@ -157,7 +170,7 @@ header a {
     background-color: #001f3f;
     box-shadow: -2px 0 10px rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    transition: right 0.1s ease-in-out;
+    transition: right 0.2s ease-in-out;
 }
 
 #hamburger-menu ul {

@@ -4,33 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        .custom-card {
-            max-width: 200px;
-            margin: 10px auto;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .custom-card img {
-            max-height: 100px;
-            object-fit: cover;
-        }
-
-        #news-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            margin: 0 120px;
-            flex: 1 1 calc(33.33% - 15px);
-        }
-
-        .custom-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-    </style>
-
-
     <!-- CSS local -->
     <link rel="stylesheet" href="../styles/stem-styles.css">
     
@@ -71,9 +44,12 @@
                 <i id="search-icon" class="fa-solid fa-magnifying-glass"></i>
             </div>
             
-            <div id="account-container">
-                <a id="login-text" href="#">Login</a>
+            <div id="account">
+                <a id="login-text" href="02-login.html">Login</a>
                 <i id="user-icon" class="fa-regular fa-circle-user"></i>
+            </div>
+            <div id="logged-account">
+                <a id="username" href="#"></a>
             </div>
         </div>
         
@@ -94,7 +70,7 @@
                     <ul>
                         <li><a href="./09-create-structure.html">Publish new article</a></li>
                         <li><a href="#">My published articles</a></li>
-                        <li><a href="./02-login-structure.html">Log out</a></li>
+                        <li><a id="logout-button" href="#">Log out</a></li>
                     </ul>
                 </div>
             </div>
