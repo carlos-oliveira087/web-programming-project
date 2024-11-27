@@ -1,11 +1,12 @@
-document.getElementById('submit-comment').addEventListener('click', () => {
-    
-    const comment = document.getElementById('comment-box').value;
+document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
 
-    if (comment) {
-    alert('Comentário enviado: ' + comment);
-    }
-    else {
-    alert('Por favor, escreva algo antes de enviar.');
-    }
+    const title = params.get("title");
+    const image = params.get("image");
+    const description = params.get("description");
+
+    // Decodifica e insere os valores nos elementos
+    document.getElementById("news-title").textContent = decodeURIComponent(title || "No Title Available");
+    document.getElementById("news-image").src = decodeURIComponent(image || "default-image.jpg");
+    document.getElementById("news-content").textContent = decodeURIComponent(description || "No description available.");
 });

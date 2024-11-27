@@ -76,8 +76,29 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card-link {
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    height: 200px;
+}
+
+.card {
+    text-decoration: none;
+    color: #000;
+    transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-link:hover .card:hover {
+    transform: scale(1.02);
+    color: #eb7358;
+    background: transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
 .custom-card img {
-    max-height: 100px;
+    max-height: 200px;
     object-fit: cover;
 }
 
@@ -87,9 +108,4 @@
     justify-content: space-between;
     margin: 0 120px;
     flex: 1 1 calc(33.33% - 15px);
-}
-
-.custom-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }

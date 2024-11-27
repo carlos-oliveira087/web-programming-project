@@ -1,7 +1,9 @@
-// Função para chamar notícias de "Mathematics"
-async function loadMathematicsNews() {
+document.addEventListener("DOMContentLoaded", toggleMyArticlesVisibility);
+
+// FUNÇÃO QUE CHAMA AS NOTÍCIAS DA API
+async function loadWorldNews() {
     const apiKey = "pub_57846bcf486bcebc0bcf94e4446ef9477d814";
-    const apiUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&q=mathematics&language=en&category=education,environment,other,science,technology`;
+    const apiUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=en&category=world`;
     
     try {
         const response = await fetch(apiUrl);
@@ -17,19 +19,27 @@ async function loadMathematicsNews() {
             console.error("No news found or API returned an error:", data);
         }
     } catch (error) {
-        console.error("Failed to fetch mathematics news:", error);
+        console.error("Failed to fetch science news:", error);
     }
 }
 
 
 // FUNÇÃO QUE GERA OS CARDS COM AS NOTÍCIAS
 function displayNews(newsList) {
-    const newsContainer = document.getElementById("news-container");
     
-    // Excluindo retornos que não possuem imagem
-    const newsWithImages = newsList.filter(news => news.image_url);
+    const newsContainer = document.getElementById("news-container");
 
-    newsWithImages.forEach(news => {
+    // Remover duplicatas com base na URL da imagem
+    const uniqueNews = Array.from(new Map(newsList.map(news => [news.image_url, news])).values());
+
+    // Excluir retornos que não possuem imagem
+    const newsWithImages = uniqueNews.filter(news => news.image_url);
+
+
+    // Limita o número de notícias mostradas
+    const limitedNews = newsWithImages.slice(0, 6);
+  
+    limitedNews.forEach(news => {
         const card = document.createElement("div");
         card.className = "col-md-4 mb-4 custom-card";
 
@@ -47,12 +57,26 @@ function displayNews(newsList) {
             </a>
         `;
 
+
         card.innerHTML = cardContent;
         newsContainer.appendChild(card);
     });
 }
 
+function toggleMyArticlesVisibility() {
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+    const myArticlesDiv = document.getElementById("my-articles");
+    const line = document.getElementById("line");
+    
+    if (isLoggedIn) {
+        myArticlesDiv.style.display = "block";
+        line.style.display = "block";
+    } 
+    else {
+        myArticlesDiv.style.display = "none";
+        line.style.display = "none";
+    }
+}
 
-// CHAMANDO A FUNÇÃO loadMathematicsNews ASSIM QUE O DOCUMENTO HTML É CARREGADO
-document.addEventListener("DOMContentLoaded", loadMathematicsNews);
-
+ 
+document.addEventListener("DOMContentLoaded", loadWorldNews);
