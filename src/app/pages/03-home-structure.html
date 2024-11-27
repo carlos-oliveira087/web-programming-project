@@ -87,7 +87,7 @@
     <div id="home-content">
 
         <!-- Carrossel -->
-        <div id="spotlight-carousel" class="position-relative">
+        <div id="spotlight-carousel" class="position-relative mb-5">
             <div id="newsCarousel" class="carousel slide" data-ride="carousel">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -132,35 +132,58 @@
             </div>
         </div>
 
+        <h3 class="text-center mt-4">Latest World News</h3>
+        <div id="news-container" class="row mt-5">
+            <!-- Os cards serão adicionados aqui dinamicamente -->
+        </div>
 
-        <div class="latest">
-            <h3>Latest</h3>
-            <div class="latest-content">
+        <hr>
+
+        <div class="container mt-5 mb-5">
+            <h3 class="text-center">My Published Articles</h3>
+            <div class="row g-4 align-items-start mt-5">
                 <!-- Notícia mais recente -->
-                <div class="latest-article">
-                    <img src="https://via.placeholder.com/400x200" alt="Nanotechnology in Medicine">
-                    <h4>Harnessing the Power of Nanotechnology in Medicine</h4>
-                    <p>Nanotechnology is revolutionizing the medical field by enabling targeted drug delivery and improved imaging techniques. This article explores the latest advancements and their potential impact on patient care.</p>
+                <div class="latest-article col-md-6">
+                    <h5>Most Recent:</h5>
+                    <img src="https://via.placeholder.com/300x150" class="img-fluid" alt="Nanotechnology in Medicine">
+                    <h4 class="mt-3">Harnessing the Power of Nanotechnology in Medicine</h4>
                 </div>
+        
+                <!-- Carrossel de tópicos -->
+                <div class="trending-list ml-5 col-5">
+                    <h5>More Created by Me:</h5>
+                    <div id="articlesCarousel" class="carousel slide my-10" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Item 1 -->
+                            <div class="carousel-item active">
+                                <img src="https://via.placeholder.com/300x150" class="d-block w-100" alt="Artificial Intelligence">
+                                <h5 class="text-center mt-2">Artificial Intelligence in Education</h5>
+                            </div>
+                            <!-- Item 2 -->
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/300x150" class="d-block w-100" alt="Climate Change">
+                                <h5 class="text-center mt-2">Climate Change Innovations</h5>
+                            </div>
+                            <!-- Item 3 -->
+                            <div class="carousel-item">
+                                <img src="https://via.placeholder.com/300x150" class="d-block w-100" alt="Quantum Computing">
+                                <h5 class="text-center mt-2">Quantum Computing Advancements</h5>
+                            </div>
+                            <!-- Add more items as needed -->
+                        </div>
 
-                <!-- Assuntos em alta -->
-                <div class="trending-list">
-                    <h3>Trending topics</h3>
-                    <ul>
-                        <li><a href="#">1. Artificial Intelligence in Education</a></li>
-                        <li><a href="#">2. Climate Change Innovations</a></li>
-                        <li><a href="#">3. Quantum Computing Advancements</a></li>
-                        <li><a href="#">4. Space Exploration Missions</a></li>
-                        <li><a href="#">5. Biotechnology Breakthroughs</a></li>
-                        <li><a href="#">6. Renewable Energy Technologies</a></li>
-                        <li><a href="#">7. Blockchain and Cryptocurrency Trends</a></li>
-                        <li><a href="#">8. Advances in Genetic Engineering</a></li>
-                        <li><a href="#">9. Robotics and Automation in Industries</a></li>
-                        <li><a href="#">10. Mental Health Awareness in the Digital Age</a></li>
-                    </ul>
+                        <!-- Controles do Carrossel -->
+                        <button class="carousel-control-prev mb-5" type="button" data-bs-target="#articlesCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next mb-5" type="button" data-bs-target="#articlesCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
+        
 
 
     </div>
@@ -218,11 +241,13 @@
 
     <!-- Scripts locais -->
     <script src="../scripts/hamburger-menu-script.js"></script>
+    <script src="../scripts/home-script.js"></script>
 
     <!-- Scripts do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

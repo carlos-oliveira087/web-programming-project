@@ -39,23 +39,47 @@
 }
 
 
-/* MAIS RECENTES ----------------------------------------------------------- */
-.latest, .trending-topics {
-    padding: 20px;
-    margin: 20px;
+/* NOTÍCIAS DO MUNDO ----------------------------------------------------------- */
+.custom-card {
+    max-width: 200px;
+    margin: 10px auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.latest h3, .trending-topics h3 {
-    font-size: 1.5em;
-    border-bottom: 2px solid #333;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+.custom-card img {
+    max-height: 100px;
+    object-fit: cover;
 }
 
-.latest-content, .trending-content {
+.custom-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#news-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    justify-content: space-between;
+    margin: 0 120px;
+    flex: 1 1 calc(33.33% - 15px);
+}
+
+/* MEUS ARTIGOS ----------------------------------------------------------- */
+
+/* Remover fundo e bordas dos botões */
+.carousel-control-prev, .carousel-control-next {
+    background: none;
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+/* MAIS RECENTES ----------------------------------------------------------- */
+
+.latest-article img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .latest-article {
@@ -63,12 +87,6 @@
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    border-radius: 5px;
-}
-
-.latest-article img {
-    width: 100%;
-    height: auto;
     border-radius: 5px;
 }
 
@@ -86,24 +104,9 @@
     border-radius: 5px;
 }
 
-.trending-list ul {
-    list-style: none;
-    padding: 0;
-}
-
-.trending-list li {
-    margin: 10px 0;
-    font-size: 1em;
-}
-
-.trending-list a {
-    text-decoration: none;
-    color: #333;
-}
-
-.trending-list a:hover {
-    color: #007acc;
-}
-
-
 /* OUTROS ----------------------------------------------------------- */
+
+hr {
+    height: 3px;
+    background-color: #001f3f;
+}
