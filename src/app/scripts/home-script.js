@@ -1,4 +1,6 @@
-// FUNÇÃO QUE CHAMA AS NOTÍCIAS DE TECNOLOGIA DA API
+document.addEventListener("DOMContentLoaded", toggleMyArticlesVisibility);
+
+// FUNÇÃO QUE CHAMA AS NOTÍCIAS DA API
 async function loadWorldNews() {
     const apiKey = "pub_57846bcf486bcebc0bcf94e4446ef9477d814";
     const apiUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=en&category=world`;
@@ -42,18 +44,18 @@ function displayNews(newsList) {
         card.className = "col-md-4 mb-4 custom-card";
 
         const cardContent = `
-            <div class="card">
-                <img src="${news.image_url}" class="card-img-top" alt="${news.title}">
-                
-                <div class="card-body">
-                    <h5 class="card-title">${news.title}</h5>
-                    <p class="card-text text-muted">${news.creator ? news.creator.join(", ") : "Unknown Author"}</p>
-                    <p class="card-text">${news.description ? news.description.substring(0, 30) + "..." : "No description available"}</p>
-                    <a href="10-article-page-structure.html?title=${encodeURIComponent(news.title)}&image=${encodeURIComponent(news.image_url)}&description=${encodeURIComponent(news.description || "No description available.")}" class="btn btn-primary">Read More</a>
+            <a href="10-article-page-structure.html?title=${encodeURIComponent(news.title)}&image=${encodeURIComponent(news.image_url)}&description=${encodeURIComponent(news.description || "No description available.")}" class="card-link">
+                <div class="card">
+                    <img src="${news.image_url}" class="card-img-top" alt="${news.title}">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">${news.title}</h5>
+                        <p class="card-text text-muted">${news.creator ? news.creator.join(", ") : "Unknown Author"}</p>
+                        <p class="card-text">${news.description ? news.description.substring(0, 30) + "..." : "No description available"}</p>
+                    </div>
                 </div>
-            </div>
+            </a>
         `;
-
 
 
         card.innerHTML = cardContent;
@@ -61,4 +63,20 @@ function displayNews(newsList) {
     });
 }
 
+function toggleMyArticlesVisibility() {
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+    const myArticlesDiv = document.getElementById("my-articles");
+    const line = document.getElementById("line");
+    
+    if (isLoggedIn) {
+        myArticlesDiv.style.display = "block";
+        line.style.display = "block";
+    } 
+    else {
+        myArticlesDiv.style.display = "none";
+        line.style.display = "none";
+    }
+}
+
+ 
 document.addEventListener("DOMContentLoaded", loadWorldNews);
