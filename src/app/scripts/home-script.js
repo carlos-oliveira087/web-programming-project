@@ -1,4 +1,6 @@
-// FUNÇÃO QUE CHAMA AS NOTÍCIAS DE TECNOLOGIA DA API
+document.addEventListener("DOMContentLoaded", toggleMyArticlesVisibility);
+
+// FUNÇÃO QUE CHAMA AS NOTÍCIAS DA API
 async function loadWorldNews() {
     const apiKey = "pub_57846bcf486bcebc0bcf94e4446ef9477d814";
     const apiUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=en&category=world`;
@@ -61,4 +63,20 @@ function displayNews(newsList) {
     });
 }
 
+function toggleMyArticlesVisibility() {
+    const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
+    const myArticlesDiv = document.getElementById("my-articles");
+    const line = document.getElementById("line");
+    
+    if (isLoggedIn) {
+        myArticlesDiv.style.display = "block";
+        line.style.display = "block";
+    } 
+    else {
+        myArticlesDiv.style.display = "none";
+        line.style.display = "none";
+    }
+}
+
+ 
 document.addEventListener("DOMContentLoaded", loadWorldNews);
