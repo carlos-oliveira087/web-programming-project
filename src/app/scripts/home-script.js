@@ -28,7 +28,7 @@ function displayNews(newsList) {
     const newsContainer = document.getElementById("news-container");
 
     // Remover duplicatas com base na URL da imagem
-    const uniqueNews = Array.from(new Map(newsList.map(news => [news.title, news])).values());
+    const uniqueNews = Array.from(new Map(newsList.map(news => [news.image_url, news])).values());
 
     // Excluir retornos que não possuem imagem
     const newsWithImages = uniqueNews.filter(news => news.image_url);
@@ -49,9 +49,12 @@ function displayNews(newsList) {
                     <h5 class="card-title">${news.title}</h5>
                     <p class="card-text text-muted">${news.creator ? news.creator.join(", ") : "Unknown Author"}</p>
                     <p class="card-text">${news.description ? news.description.substring(0, 30) + "..." : "No description available"}</p>
+                    <a href="10-article-page-structure.html?title=${encodeURIComponent(news.title)}&image=${encodeURIComponent(news.image_url)}&description=${encodeURIComponent(news.description || "No description available.")}" class="btn btn-primary">Read More</a>
                 </div>
             </div>
         `;
+
+
 
         card.innerHTML = cardContent;
         newsContainer.appendChild(card);
