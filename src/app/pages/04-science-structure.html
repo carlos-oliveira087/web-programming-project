@@ -97,9 +97,9 @@
             <div class="latest-content">
                 <!-- Notícia mais recente -->
                 <div class="latest-article">
-                    <img src="https://via.placeholder.com/400x200" alt="Nanotechnology in Medicine">
-                    <h4>Harnessing the Power of Nanotechnology in Medicine</h4>
-                    <p>Nanotechnology is revolutionizing the medical field by enabling targeted drug delivery and improved imaging techniques. This article explores the latest advancements and their potential impact on patient care.</p>
+                    <img id="latest-article-img" src="" alt="Latest article cover image">
+                    <h4 id="latest-article-title"></h4>
+                    <p id="latest-article-intro"></p>
                 </div>
 
                 <!-- Assuntos em alta -->
@@ -178,6 +178,22 @@
     <!-- Scripts locais -->
     <script src="../scripts/hamburger-menu-script.js"></script>
     <script src="../scripts/04-science-script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch('../controllers/user-news-controller.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.error) {
+                        document.getElementById("latest-article-img").src = data.news_image;
+                        document.getElementById("latest-article-title").innerText = "Latest News";
+                        document.getElementById("latest-article-intro").innerText = data.news_text;
+                    } else {
+                        document.getElementById("latest-article-title").innerText = "No news available.";
+                    }
+                })
+                .catch(error => console.error("Error fetching news:", error));
+        });
+    </script>
 
     <!-- Scripts do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

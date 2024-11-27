@@ -147,10 +147,15 @@
                 <!-- Notícia mais recente -->
                 <div class="latest-article col-md-6">
                     <h5>Most Recent:</h5>
-                    <img src="https://via.placeholder.com/300x150" class="img-fluid" alt="Nanotechnology in Medicine">
-                    <h4 class="mt-3">Harnessing the Power of Nanotechnology in Medicine</h4>
+                    <?php if (!empty($latestNews)): ?>
+                        <img src="<?php echo htmlspecialchars($latestNews['news_image']); ?>" class="img-fluid" alt="Latest News Image">
+                        <h4 class="mt-3"><?php echo htmlspecialchars($latestNews['news_title']); ?></h4>
+                    <?php else: ?>
+                        <p>No news available at the moment.</p>
+                    <?php endif; ?>
                 </div>
-        
+                
+                
                 <!-- Carrossel de tópicos -->
                 <div class="trending-list ml-5 col-5">
                     <h5>More Created by Me:</h5>
@@ -183,9 +188,6 @@
                 </div>
             </div>
         </div>
-        
-
-
     </div>
     
     

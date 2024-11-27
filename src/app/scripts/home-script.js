@@ -29,14 +29,10 @@ function displayNews(newsList) {
     
     const newsContainer = document.getElementById("news-container");
 
-    // Remover duplicatas com base na URL da imagem
     const uniqueNews = Array.from(new Map(newsList.map(news => [news.image_url, news])).values());
 
-    // Excluir retornos que não possuem imagem
     const newsWithImages = uniqueNews.filter(news => news.image_url);
 
-
-    // Limita o número de notícias mostradas
     const limitedNews = newsWithImages.slice(0, 6);
   
     limitedNews.forEach(news => {
