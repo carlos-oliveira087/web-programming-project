@@ -1,5 +1,4 @@
 // SCRIPT PARA ABRIR E FECHAR O MENU HAMBÚRGUER
-
 const hamburgerMenuIcon = document.getElementById('hamburger-menu-icon');
 const hamburgerMenu = document.getElementById('hamburger-menu');
 const xMenuIcon = document.getElementById('x-menu-icon');
@@ -7,7 +6,7 @@ const xMenuIcon = document.getElementById('x-menu-icon');
 hamburgerMenu.style.right = '-250px';
 xMenuIcon.style.display = 'none';
 
-// Evento de clique para abrir e fechar o menu
+// Evento de clique para abrir o menu
 hamburgerMenuIcon.addEventListener('click', () => {
     hamburgerMenu.style.right = '0';
     hamburgerMenuIcon.style.display = 'none';
@@ -21,8 +20,8 @@ xMenuIcon.addEventListener('click', () => {
     hamburgerMenuIcon.style.display = 'block';
 });
 
-// SCRIPT PARA APARECER NOME CADASTRADO NO LOGIN
 
+// SCRIPT PARA APARECER NOME CADASTRADO NO LOGIN
 const loggedIn = document.getElementById('logged-account');
 const notLoggedin = document.getElementById('account');
 const usernameElement = document.getElementById('username');
@@ -42,7 +41,6 @@ else {
 
 
 // SCRIPT PARA FAZER LOGOUT
-
 const logoutButton = document.getElementById('logout-button');
 
 logoutButton.addEventListener('click', () => {
@@ -61,7 +59,6 @@ logoutButton.addEventListener('click', () => {
 
 
 // SCRIPT PARA MUDANÇA DE ITENS NO MENU
-
 const loginButton = document.getElementById('login-button');
 const publishButton = document.getElementById('publish-button');
 const publishedButton = document.getElementById('published-button');

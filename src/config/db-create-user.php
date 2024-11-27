@@ -9,7 +9,6 @@
         $password = $_POST['password'];
         $confirmation = $_POST['confirmation'];
 
-        // Alertas caso o formulário não tenha sido preenchido completamente e caso as senhas não combinem
         if (empty($name) || empty($email) || empty($password) || empty($confirmation)) {
             echo "<script>alert('Please fill in all fields!'); window.history.back();</script>";
             exit();
@@ -20,7 +19,6 @@
             exit();
         }
 
-        // Criptografando a senha para armazenamento no BD
         $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
         $sql = "INSERT INTO user_table (user_name, user_email, user_password, created_at) 
@@ -37,11 +35,10 @@
 
         if ($stmt->execute()) {
             echo "<script>
-                alert('Account created succesfully!');
-                setTimeout(function() {
-                    window.location.href = '../app/pages/02-login-structure.html';
-                }, 2000); // 2 seconds delay before redirection
+                alert('Account created successfully!');
+                window.location.href = '../app/pages/02-login-structure.html';
             </script>";
+            exit();
         } else {
             echo "<script>alert('Error while signing up: " . $stmt->error . "'); window.history.back();</script>";
         }
