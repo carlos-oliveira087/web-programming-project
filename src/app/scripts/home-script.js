@@ -1,7 +1,7 @@
 // FUNÇÃO QUE CHAMA AS NOTÍCIAS DE TECNOLOGIA DA API
 async function loadWorldNews() {
     const apiKey = "pub_57846bcf486bcebc0bcf94e4446ef9477d814";
-    const apiUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&country=us&language=en&category=world `;
+    const apiUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=en&category=world`;
     
     try {
         const response = await fetch(apiUrl);
@@ -28,14 +28,15 @@ function displayNews(newsList) {
     const newsContainer = document.getElementById("news-container");
 
     // Remover duplicatas com base na URL da imagem
-    const uniqueNewsImage = Array.from(new Map(newsList.map(news => [news.image_url, news])).values());
+    const uniqueNews = Array.from(new Map(newsList.map(news => [news.title, news])).values());
 
     // Excluir retornos que não possuem imagem
-    const newsWithImages = uniqueNewsImage.filter(news => news.image_url);
+    const newsWithImages = uniqueNews.filter(news => news.image_url);
 
+
+    // Limita o número de notícias mostradas
     const limitedNews = newsWithImages.slice(0, 6);
-
-
+  
     limitedNews.forEach(news => {
         const card = document.createElement("div");
         card.className = "col-md-4 mb-4 custom-card";
@@ -57,6 +58,4 @@ function displayNews(newsList) {
     });
 }
 
-
-// CHAMANDO A FUNÇÃO loadTechnologyNews ASSIM QUE O DOCUMENTO HTML É CARREGADO
 document.addEventListener("DOMContentLoaded", loadWorldNews);
