@@ -1,25 +1,30 @@
 <?php
+    // SCRIPT PARA BUSCAR A NOTÍCIA DE 'SCIENCE' MAIS RECENTE CADASTRADA PELO USUÁRIO
+
     include_once("../../config/db-connection.php");
 
     header("Content-Type: application/json");
 
+    // Especificando a categoria
     $category = 'Science';
-
+    
     if (empty($category)) {
         echo json_encode(["error" => "Category not specified."]);
         exit;
     }
-
+    
+    // Buscando no banco
     $sqlQuery = "
-        SELECT * 
-        FROM news_table 
-        WHERE news_category = '$category' 
-        ORDER BY news_creation_date DESC 
-        LIMIT 1
+    SELECT * 
+    FROM news_table 
+    WHERE news_category = '$category' 
+    ORDER BY news_creation_date DESC 
+    LIMIT 1
     ";
-
+    
     $result = mysqli_query($conn, $sqlQuery);
-
+    
+    // Tratamento de erros
     if (!$result) {
         error_log("SQL Error: " . mysqli_error($conn));
         echo json_encode(["error" => "Failed to fetch news."]);
