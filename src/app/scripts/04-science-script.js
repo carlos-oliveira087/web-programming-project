@@ -29,4 +29,5 @@ function displayNews(newsList) {
 }
 
 
+// CHAMANDO A FUNÇÃO loadScienceNews ASSIM QUE O DOCUMENTO HTML É CARREGADO
 document.addEventListener("DOMContentLoaded", loadScienceNews);

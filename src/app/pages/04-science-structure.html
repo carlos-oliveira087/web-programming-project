@@ -49,6 +49,7 @@
             
             <div id="account">
                 <a id="login-text" href="02-login-structure.html">Login</a>
+                <a id="login-text" href="02-login-structure.html">Login</a>
                 <i id="user-icon" class="fa-regular fa-circle-user"></i>
             </div>
             <div id="logged-account">
@@ -97,11 +98,11 @@
             <div class="latest-content">
                 <!-- Notícia mais recente -->
                 <div class="latest-article">
-                    <img id="latest-article-img" src="" alt="Latest article cover image">
+                    <img id="latest-article-img">
                     <h4 id="latest-article-title"></h4>
                     <p id="latest-article-intro"></p>
                 </div>
-
+ 
                 <!-- Assuntos em alta -->
                 <div class="trending-list">
                     <p class="trending-div-title">Trending topics in <span class="title-topic-color">Science</span></p>
@@ -178,6 +179,22 @@
     <!-- Scripts locais -->
     <script src="../scripts/hamburger-menu-script.js"></script>
     <script src="../scripts/04-science-script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch('../controllers/user-news-controller.php')
+                .then(response => response.json())
+                .then(data => {
+                    if (!data.error) {
+                        document.getElementById("latest-article-img").src = data.news_image;
+                        document.getElementById("latest-article-title").innerText = data.news_title;
+                        document.getElementById("latest-article-intro").innerText = data.news_text;
+                    } else {
+                        document.getElementById("latest-article-title").innerText = "No news available.";
+                    }
+                })
+                .catch(error => console.error("Error fetching news:", error));
+        });
+    </script>
 
     <!-- Scripts do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
