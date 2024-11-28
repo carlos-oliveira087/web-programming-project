@@ -51,5 +51,9 @@ function displayNews(newsList) {
 }
 
 
+// FUNÇÃO PARA BUSCAR NO BANCO A NOTÍCIA MAIS RECENTE CADASTRADA PELO USUÁRIO
+
+
+
 // CHAMANDO A FUNÇÃO loadScienceNews ASSIM QUE O DOCUMENTO HTML É CARREGADO
 document.addEventListener("DOMContentLoaded", loadScienceNews);
