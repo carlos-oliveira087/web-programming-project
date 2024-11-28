@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!data.error) {
                 document.getElementById("latest-article-img").src = `../../config/${data.news_image}`;
                 document.getElementById("latest-article-title").innerText = data.news_title;
-                document.getElementById("latest-article-intro").innerText = data.news_text;
+                document.getElementById("latest-article-intro").innerText = `${data.news_text ? data.news_text.substring(0, 200) + "..." : "No description available"}`;
             } else {
                 document.getElementById("latest-article-title").innerText = "No news available.";
             }

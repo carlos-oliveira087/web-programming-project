@@ -1,5 +1,20 @@
 document.addEventListener("DOMContentLoaded", toggleMyArticlesVisibility);
 
+// FUNÇÃO QUE GERA O CARD DO ARTIGO
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('../controllers/03-home-controller.php')
+        .then(response => response.json())
+        .then(data => {
+            if (!data.error) {
+                document.getElementById("latest-article-img").src = `../../config/${data.news_image}`;
+                document.getElementById("latest-article-title").innerText = data.news_title;
+            } else {
+                document.getElementById("latest-article-title").innerText = "No news available.";
+            }
+        })
+        .catch(error => console.error("Error fetching news:", error));
+});
+
 // FUNÇÃO QUE CHAMA AS NOTÍCIAS DA API
 async function loadWorldNews() {
     const apiKey = "pub_6061276a62930030f4faa2b020e2589b4ec50";
@@ -75,5 +90,4 @@ function toggleMyArticlesVisibility() {
     }
 }
 
- 
 document.addEventListener("DOMContentLoaded", loadWorldNews);
