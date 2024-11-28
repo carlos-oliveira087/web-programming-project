@@ -1,8 +1,47 @@
 document.addEventListener("DOMContentLoaded", toggleMyArticlesVisibility);
 
+// FUNÇÃO QUE GERA O CARD DO ARTIGO
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('../controllers/03-home-controller.php')
+        .then(response => response.json())
+        .then(data => {
+            if (data.latestNews) {
+                const latestArticleImg = document.getElementById("latest-article-img");
+                const latestArticleTitle = document.getElementById("latest-article-title");
+
+                if (latestArticleImg && latestArticleTitle) {
+                    latestArticleImg.src = `../../config/${data.latestNews.news_image}`;
+                    latestArticleTitle.innerText = data.latestNews.news_title;
+                }
+            } else {
+                document.getElementById("latest-article-title").innerText = "No news available.";
+            }
+
+            const carouselItems = document.getElementById("carousel-items");
+            if (carouselItems) {
+                carouselItems.innerHTML = '';
+                data.carouselNews.forEach((news, index) => {
+                    const activeClass = index === 0 ? 'active' : '';
+                    const carouselItem = `
+                        <div class="carousel-item ${activeClass}">
+                            <img src="../../config/${news.news_image}" class="d-block w-100" alt="${news.news_title}">
+                            <h5 class="text-center mt-2">${news.news_title}</h5>
+                        </div>
+                    `;
+                    carouselItems.innerHTML += carouselItem;
+                });
+            }
+        })
+        .catch(error => {
+            console.error("Error fetching news:", error);
+            document.getElementById("latest-article-title").innerText = "No news available.";
+        });
+});
+
+
 // FUNÇÃO QUE CHAMA AS NOTÍCIAS DA API
 async function loadWorldNews() {
-    const apiKey = "pub_6061276a62930030f4faa2b020e2589b4ec50";
+    const apiKey = "pub_607022386c7bd6d8b7b6bf38462756ad73613";
     const apiUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=en&category=world`;
     
     try {
@@ -59,6 +98,7 @@ function displayNews(newsList) {
     });
 }
 
+// FUNÇÃO QUE PERMITE SER VISÍVEL A SEÇÃO DE "MY ARTICLES"
 function toggleMyArticlesVisibility() {
     const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
     const myArticlesDiv = document.getElementById("my-articles");
@@ -74,5 +114,4 @@ function toggleMyArticlesVisibility() {
     }
 }
 
- 
 document.addEventListener("DOMContentLoaded", loadWorldNews);

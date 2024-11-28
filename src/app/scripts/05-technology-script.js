@@ -1,6 +1,22 @@
+// FUNÇÃO QUE GERA O CARD DA NOTÍCIA
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('../controllers/05-technology-controller.php')
+        .then(response => response.json())
+        .then(data => {
+            if (!data.error) {
+                document.getElementById("latest-article-img").src = `../../config/${data.news_image}`;
+                document.getElementById("latest-article-title").innerText = data.news_title;
+                document.getElementById("latest-article-intro").innerText = `${data.news_text ? data.news_text.substring(0, 200) + "..." : "No description available"}`;
+            } else {
+                document.getElementById("latest-article-title").innerText = "No news available.";
+            }
+        })
+        .catch(error => console.error("Error fetching news:", error));
+});
+
 // FUNÇÃO QUE CHAMA AS NOTÍCIAS DE TECNOLOGIA DA API
 async function loadTechnologyNews() {
-    const apiKey = "pub_6061276a62930030f4faa2b020e2589b4ec50";
+    const apiKey = "pub_607022386c7bd6d8b7b6bf38462756ad73613";
     const apiUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=en&category=technology`;
     
     try {
