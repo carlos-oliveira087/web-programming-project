@@ -4,10 +4,13 @@
 
 /* BOTÕES DE EDITAR E EXCLUIR NOTÍCIA -------------------------------------- */
 #buttons-container {
+    position: absolute;
+    top: 210px;
+    left: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 60px;
+    width: 90px;
     padding: 10px;
     border: none;
     border-radius: 12px;
@@ -46,4 +49,36 @@
     text-transform: uppercase;
     font-weight: bold;
     margin: 0;
+}
+
+
+/* TÍTULO DA NOTÍCIA ------------------------------------------------------- */
+.user-news-title{
+    text-align: center;
+    margin-block: 70px;
+    font-size: 28px;
+    margin-inline: 50px;
+}
+
+
+/* IMAGEM DA NOTÍCIA ------------------------------------------------------- */
+#image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.user-news-image{
+    margin-bottom: 70px;
+    width: 800px;
+    height: 450px;
+}
+
+
+/* CORPO DA NOTÍCIA -------------------------------------------------------- */
+#user-news-body {
+    width: 65%;         
+    margin: 0 auto;           
+    font-size: 18px; 
+    line-height: 2;  
+    margin-bottom: 70px;
 }
