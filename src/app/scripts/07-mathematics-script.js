@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Função para chamar notícias de "Mathematics"
 async function loadMathematicsNews() {
-    const apiKey = "pub_6061276a62930030f4faa2b020e2589b4ec50";
+    const apiKey = "pub_607022386c7bd6d8b7b6bf38462756ad73613";
     const apiUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&q=mathematics&language=en&category=education,environment,other,science,technology`;
     
     try {
