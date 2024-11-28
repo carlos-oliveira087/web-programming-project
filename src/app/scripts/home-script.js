@@ -59,6 +59,7 @@ function displayNews(newsList) {
     });
 }
 
+// FUNÇÃO QUE PERMITE SER VISÍVEL A SEÇÃO DE "MY ARTICLES"
 function toggleMyArticlesVisibility() {
     const isLoggedIn = localStorage.getItem("isLoggedIn") === "true";
     const myArticlesDiv = document.getElementById("my-articles");

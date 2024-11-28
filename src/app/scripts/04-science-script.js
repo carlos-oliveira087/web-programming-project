@@ -1,3 +1,19 @@
+// FUNÇÃO QUE GERA O CARD DA NOTÍCIA
+document.addEventListener("DOMContentLoaded", () => {
+    fetch('../controllers/04-science-controller.php')
+        .then(response => response.json())
+        .then(data => {
+            if (!data.error) {
+                document.getElementById("latest-article-img").src = `../../config/${data.news_image}`;
+                document.getElementById("latest-article-title").innerText = data.news_title;
+                document.getElementById("latest-article-intro").innerText = data.news_text;
+            } else {
+                document.getElementById("latest-article-title").innerText = "No news available.";
+            }
+        })
+        .catch(error => console.error("Error fetching news:", error));
+});
+
 // FUNÇÃO QUE GERA OS CARDS COM AS NOTÍCIAS
 function displayNews(newsList) {
     const newsContainer = document.getElementById("news-container");
