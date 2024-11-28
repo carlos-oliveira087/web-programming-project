@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", toggleMyArticlesVisibility);
 
 // FUNÇÃO QUE CHAMA AS NOTÍCIAS DA API
 async function loadWorldNews() {
-    const apiKey = "pub_57846bcf486bcebc0bcf94e4446ef9477d814";
+    const apiKey = "pub_6061276a62930030f4faa2b020e2589b4ec50";
     const apiUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=en&category=world`;
     
     try {

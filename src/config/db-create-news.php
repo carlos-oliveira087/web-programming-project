@@ -24,11 +24,12 @@
 
             $image_path = $upload_dir . $image_name;
             if (move_uploaded_file($image_temp_path, $image_path)) {
-                $sql = "INSERT INTO news_table (news_category, news_title, news_author, news_text, news_image, news_creation_date) 
+                $sql = "INSERT INTO news_table (news_category, news_title, creator, news_text, news_image, news_creation_date) 
                         VALUES ('$category', '$title', '$author', '$text', '$image_path', '$creation_date')";
 
                 if (mysqli_query($conn, $sql)) {
-                    echo "<script>alert('News successfully registered!');</script>";
+                    echo "<script>alert('News successfully registered!');;
+                    window.location.href = '../app/pages/03-home-structure.html'</script>";
                 } else {
                     echo "<script>alert('Error registering news: " . mysqli_error($conn) . "');</script>";
                 }

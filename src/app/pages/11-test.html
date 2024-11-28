@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Ícone do navegador -->
-    <link rel="icon" href="../../../assets/images/icon-image5.png">
-
-    <!-- CSS local -->
-    <link rel="stylesheet" href="../styles/stem-styles.css">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="../../../assets/images/icon-image5.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- CSS do Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Fonte da logo -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
-    <!-- Fonte do corpo -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <!-- CSS local -->
+        <link rel="stylesheet" href="../styles/10-article-page.css">
+        
+        <!-- CSS do Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <title>Science – Bright Minds</title>
-</head>
+        <!-- Fonte da logo -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+        <!-- Fonte do corpo -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+        <title>Article – Bright Minds</title>
+    </head>
 <body>
 
     <!-- Header -->
     <header class="header">
+
         <!-- Logo, barra de pesquisa e login -->
         <div id="header-top">
             <a href="./03-home-structure.html" id="logo-link">
@@ -48,7 +46,7 @@
             </div>
             
             <div id="account">
-                <a id="login-text" href="02-login-structure.html">Login</a>
+                <a id="login-text" href="02-login-structure">Login</a>
                 <i id="user-icon" class="fa-regular fa-circle-user"></i>
             </div>
             <div id="logged-account">
@@ -60,7 +58,7 @@
         <div id="header-bottom">
             <ul class="navigation-tabs">
                 <li class="nav-button"><a href="./03-home-structure.html">Home</a></li>
-                <li class="nav-button active"><a href="./04-science-structure.html" class="active">Science</a></li>
+                <li class="nav-button"><a href="./04-science-structure.html">Science</a></li>
                 <li class="nav-button"><a href="./05-technology-structure.html">Technology</a></li>
                 <li class="nav-button"><a href="./06-engineering-structure.html">Engineering</a></li>
                 <li class="nav-button"><a href="./07-mathematics-structure.html">Mathematics</a></li>
@@ -74,7 +72,7 @@
                         <li><a id="publish-button" href="./09-create-structure.html">Publish new article</a></li>
                         <li><a id="published-button" href="#">My published articles</a></li>
                         <li><a id="logout-button" href="#">Log out</a></li>
-                        <li><a id="login-button" href="02-login-structure.html">Login</a></li>
+                        <li><a id="login-button" href="02-login-structure">Login</a></li>
                     </ul>
                 </div>
             </div>
@@ -84,49 +82,35 @@
             <i id="x-menu-icon" class="fa-solid fa-x"></i>
         </div>
     </header>
-    
-    
-    <!-- Conteúdo -->
-    <div id="home-content">
 
-        <!-- Mais recentes e em alta -->
-        <div class="latest">
-            <p class="latest-div-title">Latest in <span class="title-topic-color">Science</span></p>
-            <hr class="hr-blue">
-
-            <div class="latest-content">
-                <!-- Notícia mais recente -->
-                <div class="latest-article">
-                    <img id="latest-article-img" src="" alt="Latest article cover image">
-                    <h4 id="latest-article-title"></h4>
-                    <p id="latest-article-intro"></p>
-                </div>
-
-                <!-- Assuntos em alta -->
-                <div class="trending-list">
-                    <p class="trending-div-title">Trending topics in <span class="title-topic-color">Science</span></p>
-                    <hr class="hr-blue">
-                    <ol class="list-group">
-                        <li class="list-group-item"><a href="">1.  CRISPR and Gene Editing</a></li>
-                        <li class="list-group-item"><a href="">2.  Climate Change and Environmental Science</a></li>
-                        <li class="list-group-item"><a href="">3.  Microbiome Research</a></li>
-                        <li class="list-group-item"><a href="">4.  Artificial Intelligence in Drug Discovery</a></li>
-                        <li class="list-group-item"><a href="">5.  Synthetic Biology</a></li>
-                        <li class="list-group-item"><a href="">6.  Neuroscience and Brain Research</a></li>
-                        <li class="list-group-item"><a href="">7.  Nanotechnology in Medicine</a></li>
-                    </ol>                    
-                </div>
-            </div>
-        </div>
-        
-        <div id="news-container" class="row">
-            <!-- Local para os cards de notícia da API serem inseridos -->
-        </div>
+    <div class="buttons-edit">
+        <button class="edit-button"><i class="fa-solid fa-pencil" id="edit"></i></button>
+        <button class="delete-button"><i class="fa-solid fa-trash" id="delete"></i></button>
     </div>
+
+    <!-- header da noticia-->
+    <div class="topics">
+        <!-- titulo-->
+        <h1 class="title">Revolutionizing Skyscraper Design with Sustainable Engineering</h1>
+    </section>
+
+    <!-- Preview image figure-->
+    <div class="image-container">
+        <img class="image" src="../../config/uploads/1710801284090.png"/>
+    </div>
+
+    <!-- Post content-->
+    <div class="text">
+        <p>Engineering innovation is redefining the skyline of our cities with a focus on sustainability and efficiency. Modern skyscrapers are no longer just architectural marvels—they are feats of sustainable engineering.
+
+            Today’s engineers incorporate cutting-edge technologies like carbon-neutral materials, wind-resistant structures, and energy-efficient designs. Vertical gardens, integrated solar panels, and water recycling systems are becoming standard features in high-rise buildings, transforming them into eco-friendly habitats.
+            
+            One remarkable example is the Bosco Verticale in Milan, Italy—a pair of residential towers wrapped in lush greenery. Projects like these prove that skyscrapers can harmonize with nature rather than overpower it.
+            
+            As cities grow denser, engineers continue to push the boundaries of what’s possible. With sustainable solutions at the forefront, the future of urban development is not just taller but greener and smarter than ever before.</p>
+    </div>  
     
-    
-    <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" >
         <div id="footer-titles">
             <p class="footer-title">More from us</p>
             <p class="footer-title">Join our Newsletter</p>
@@ -170,19 +154,13 @@
         <a id="back-to-top-button" href="#header">BACK TO TOP</a>
 
         <hr>
-
+        
         <p id="copyright-text" >&copy; 2024 The Bright Minds Journal. All rights reserved.</p>
     </footer>
-
-
+    
     <!-- Scripts locais -->
     <script src="../scripts/hamburger-menu-script.js"></script>
-    <script src="../scripts/04-science-script.js"></script>
-
-    <!-- Scripts do Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../scripts/10-article-page-structure.js"></script>
 
 </body>
 </html>

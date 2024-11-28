@@ -1,6 +1,6 @@
 // FUNÇÃO QUE CHAMA AS NOTÍCIAS DE TECNOLOGIA DA API
 async function loadTechnologyNews() {
-    const apiKey = "pub_57846bcf486bcebc0bcf94e4446ef9477d814";
+    const apiKey = "pub_6061276a62930030f4faa2b020e2589b4ec50";
     const apiUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=en&category=technology`;
     
     try {
@@ -53,5 +53,4 @@ function displayNews(newsList) {
 }
 
 
-// CHAMANDO A FUNÇÃO loadTechnologyNews ASSIM QUE O DOCUMENTO HTML É CARREGADO
 document.addEventListener("DOMContentLoaded", loadTechnologyNews);

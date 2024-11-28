@@ -2,7 +2,7 @@
 // (Usado para o display do nome do usuário na header e para disponibilizar funcionalidades que só são disponíveis com login)
 
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById('sign-up-form').addEventListener('submit', function(event) {
+    document.getElementById('sign-up-form').addEventListener('submit', function() {
 
         const email = document.getElementById('email').value;
         const name = document.getElementById('name').value;
