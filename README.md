@@ -6,23 +6,23 @@ Bright Minds visa oferecer conteúdo atualizado e de qualidade sobre temas relev
 
 ---
 
-## Componentes / Components
+## Componentes
 - Telas de log-in e sign up
 - Tela inicial (Home)
 - Telas de notícias dos temas Ciência, Tecnologia, Engenharia e Matemática (STEM)
 - Tela de oportunidades de estudos e emprego
 - Tela de submeter novo artigo
-- Tela de artigos submetidos pelo usuário logado
+- Tela de notícia aberta
 
 ---
 
-## Como usar / How to run
+## Como usar
 **1. Clone o repositório:**
 ```
 git clone https://github.com/carlos-oliveira087/web-programming-project
 ```
 
-**2. Abra o arquivo "03-home-structure.html"**
+**2. Abra o arquivo "01-signup-structure.html"**
 
 ---
 
@@ -31,48 +31,28 @@ git clone https://github.com/carlos-oliveira087/web-programming-project
 ### Desktop:
 <table>
   <tr>
-    <td><img src="" alt="" width="300"></td>
-    <td><img src="" alt="" width="300"></td>
+    <td><img src="./screenshots/01-signup-page-screenshot.png" alt="Tela de Criação de Conta" width="300"></td>
+    <td><img src="./screenshots/02-login-page-screenshot.png" alt="Tela de Login" width="300"></td>
   </tr>
   <tr>
-    <td><img src="" alt="" width="300"></td>
-    <td><img src="" alt="" width="300"></td>
+    <td><img src="./screenshots//03-home-page-screenshot.png" alt="Tela inicial (Home)" width="300"></td>
+    <td><img src="./screenshots/05-technology-page-screenshot.png" alt="Tela de notícias de tecnologia" width="300"></td>
   </tr>
   <tr>
-    <td><img src="" alt="" width="300"></td>
-    <td><img src="" alt="" width="300"></td>
+    <td><img src="./screenshots/06-engineering-page-screenshot.png" alt="Tela de notícias de engenharia" width="300"></td>
+    <td><img src="./screenshots/07-mathematics-page-screenshot.png" alt="Tela de notícias de matemática" width="300"></td>
   </tr>
   <tr>
-    <td><img src="" alt="" width="300"></td>
-    <td><img src="" alt="" width="300"></td>
+    <td><img src="./screenshots/opportunities-page-screenshot.png" alt="" width="300"></td>
+    <td><img src="./screenshots/api-article-page-screenshot.png" alt="" width="300"></td>
   </tr>
 </table>
 
-<br>
 
-### Capturas de tela - Mobile / Mobile Screenshots
-
-<table>
-  <tr>
-    <td><img src="" alt="" width="300"></td>
-    <td><img src="" alt="" width="300"></td>
-  </tr>
-  </tr>
-  <tr>
-    <td><img src="" alt="" width="300"></td>
-    <td><img src="" alt="" width="300"></td>
-  </tr>
-  <tr>
-    <td><img src="" alt="" width="300"></td>
-    <td><img src="" alt="" width="300"></td>
-  </tr>
-</table>
-
-<br>
 
 ---
 
-### Autora / Author
+### Autores
 Alexandre Bruno Palitot Martins<br>
 Beatriz Almeida de Souza Silva<br>
 Hugo Lins Pedrosa<br>
