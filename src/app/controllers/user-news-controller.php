@@ -3,7 +3,21 @@
 
     header("Content-Type: application/json");
 
-    $sqlQuery = "SELECT * FROM news_table ORDER BY news_creation_date DESC LIMIT 1";
+    $category = 'Science';
+
+    if (empty($category)) {
+        echo json_encode(["error" => "Category not specified."]);
+        exit;
+    }
+
+    $sqlQuery = "
+        SELECT * 
+        FROM news_table 
+        WHERE news_category = '$category' 
+        ORDER BY news_creation_date DESC 
+        LIMIT 1
+    ";
+
     $result = mysqli_query($conn, $sqlQuery);
 
     if (!$result) {
@@ -20,7 +34,7 @@
             "news_text" => $row["news_text"]
         ]);
     } else {
-        error_log("No news found.");
-        echo json_encode(["error" => "No news found."]);
+        error_log("No news found in category: $category.");
+        echo json_encode(["error" => "No news found for the specified category."]);
     }
 ?>
