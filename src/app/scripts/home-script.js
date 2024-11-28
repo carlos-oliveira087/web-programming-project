@@ -5,15 +5,39 @@ document.addEventListener("DOMContentLoaded", () => {
     fetch('../controllers/03-home-controller.php')
         .then(response => response.json())
         .then(data => {
-            if (!data.error) {
-                document.getElementById("latest-article-img").src = `../../config/${data.news_image}`;
-                document.getElementById("latest-article-title").innerText = data.news_title;
+            if (data.latestNews) {
+                const latestArticleImg = document.getElementById("latest-article-img");
+                const latestArticleTitle = document.getElementById("latest-article-title");
+
+                if (latestArticleImg && latestArticleTitle) {
+                    latestArticleImg.src = `../../config/${data.latestNews.news_image}`;
+                    latestArticleTitle.innerText = data.latestNews.news_title;
+                }
             } else {
                 document.getElementById("latest-article-title").innerText = "No news available.";
             }
+
+            const carouselItems = document.getElementById("carousel-items");
+            if (carouselItems) {
+                carouselItems.innerHTML = '';
+                data.carouselNews.forEach((news, index) => {
+                    const activeClass = index === 0 ? 'active' : '';
+                    const carouselItem = `
+                        <div class="carousel-item ${activeClass}">
+                            <img src="../../config/${news.news_image}" class="d-block w-100" alt="${news.news_title}">
+                            <h5 class="text-center mt-2">${news.news_title}</h5>
+                        </div>
+                    `;
+                    carouselItems.innerHTML += carouselItem;
+                });
+            }
         })
-        .catch(error => console.error("Error fetching news:", error));
+        .catch(error => {
+            console.error("Error fetching news:", error);
+            document.getElementById("latest-article-title").innerText = "No news available.";
+        });
 });
+
 
 // FUNÇÃO QUE CHAMA AS NOTÍCIAS DA API
 async function loadWorldNews() {
