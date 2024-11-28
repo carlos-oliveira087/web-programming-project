@@ -7,7 +7,7 @@
 }
 
 /* Lado com a imagem */
-.leftside   {
+.leftside {
     display: flex;
     flex: 1;
     background-image: url("../../../assets/images/background-image4.jpg");
@@ -127,4 +127,8 @@
     color: white;
     font-size: 14px;
     margin-top: 3px;
+}
+
+a {
+    color: #eb7358;
 }
