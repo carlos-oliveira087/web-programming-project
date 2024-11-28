@@ -185,7 +185,7 @@
                 .then(response => response.json())
                 .then(data => {
                     if (!data.error) {
-                        document.getElementById("latest-article-img").src = data.news_image;
+                        document.getElementById("latest-article-img").src = `../../config/${data.news_image}`;
                         document.getElementById("latest-article-title").innerText = data.news_title;
                         document.getElementById("latest-article-intro").innerText = data.news_text;
                     } else {
