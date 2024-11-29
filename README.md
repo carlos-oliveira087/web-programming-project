@@ -36,27 +36,29 @@ git clone https://github.com/carlos-oliveira087/web-programming-project
   </tr>
   <tr>
     <td><img src="./screenshots//03-home-page-screenshot.png" alt="Tela inicial (Home)" width="300"></td>
-    <td><img src="./screenshots/05-technology-page-screenshot.png" alt="Tela de notícias de tecnologia" width="300"></td>
+    <td><img src="./screenshots/04-science-page-screenshot.png" alt="Tela de notícias de tecnologia" width="300"></td>
   </tr>
   <tr>
-    <td><img src="./screenshots/06-engineering-page-screenshot.png" alt="Tela de notícias de engenharia" width="300"></td>
-    <td><img src="./screenshots/07-mathematics-page-screenshot.png" alt="Tela de notícias de matemática" width="300"></td>
+    <td><img src="./screenshots/05-technology-page-screenshot.png" alt="Tela de notícias de engenharia" width="300"></td>
+    <td><img src="./screenshots/06-engineering-page-screenshot.png" alt="Tela de notícias de matemática" width="300"></td>
   </tr>
   <tr>
-    <td><img src="./screenshots/opportunities-page-screenshot.png" alt="" width="300"></td>
-    <td><img src="./screenshots/api-article-page-screenshot.png" alt="" width="300"></td>
+    <td><img src="./screenshots/opportunities-page-screenshot.png" alt="Tela de oportunidades" width="300"></td>
+    <td><img src="./screenshots/03-home-hamburger-menu-screenshot.png" alt="Tela inicial com menu aberto" width="300"></td>
+  </tr>
+  <tr>
+    <td><img src="./screenshots/11-user-article-screenshot.png" alt="Página de artigo do usuário" width="300"></td>
+    <td><img src="./screenshots/api-article-page-screenshot.png" alt="Página de artigo da API" width="300"></td>
   </tr>
 </table>
-
-
 
 ---
 
 ### Autores
-Alexandre Bruno Palitot Martins<br>
-Beatriz Almeida de Souza Silva<br>
-Hugo Lins Pedrosa<br>
-Ian Mendonça Madruga de Carvalho<br>
-José Carlos Oliveira<br>
-Rigel Sales de Souza<br><br>
+- Alexandre Bruno Palitot Martins<br>
+- Beatriz Almeida de Souza Silva<br>
+- Hugo Lins Pedrosa<br>
+- Ian Mendonça Madruga de Carvalho<br>
+- José Carlos Oliveira<br>
+- Rigel Sales de Souza<br>
 Novembro de 2024.
