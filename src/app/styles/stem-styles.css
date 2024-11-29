@@ -20,6 +20,15 @@
     gap: 20px;
 }
 
+.latest-content:hover .latest-article:hover {
+    transform: scale(1.02);
+    color: #eb7358;
+    background: transparent;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
 .latest-article {
     width: 60%;
     background-color: #fff;
@@ -81,6 +90,7 @@
     color: #000;
     transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
     height: 200px;
+    cursor: pointer;
 }
 
 .card {
@@ -95,6 +105,7 @@
     background: transparent;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
 }
 
 .custom-card img {

@@ -1,4 +1,4 @@
-// FUNÇÃO QUE GERA O CARD DA NOTÍCIA
+// FUNÇÃO QUE GERA O CARD DA NOTÍCIA MAIS RECENTE
 document.addEventListener("DOMContentLoaded", () => {
     fetch('../controllers/04-science-controller.php')
         .then(response => response.json())
@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
         .catch(error => console.error("Error fetching news:", error));
 });
 
-// FUNÇÃO QUE CHAMA AS NOTÍCIAS DE TECNOLOGIA DA API
+
+// FUNÇÃO QUE CHAMA AS NOTÍCIAS DE CIÊNCIA DA API
 async function loadScienceNews() {
     const apiKey = "pub_607022386c7bd6d8b7b6bf38462756ad73613";
     const apiUrl = `https://newsdata.io/api/1/news?apikey=${apiKey}&language=en&category=science`;
