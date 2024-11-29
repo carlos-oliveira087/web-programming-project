@@ -23,6 +23,7 @@
     ";
     
     $result = mysqli_query($conn, $sqlQuery);
+
     
     // Tratamento de erros
     if (!$result) {
