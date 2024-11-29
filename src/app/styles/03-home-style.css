@@ -104,6 +104,23 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(1); 
+}
+
+.latest-article:hover {
+    transform: scale(1.06);
+}
+
+.latest-article-link {
+    color: #000;
+    transition: 0.3s ease;
+}
+
+.latest-article-link:hover {
+    color: #eb7358;
+    text-decoration: none;
 }
 
 .latest-article h4 {
@@ -119,6 +136,13 @@
     padding: 20px;
     border-radius: 5px;
 }
+
+/* CARROSSEL ----------------------------------------------------------- */
+
+.carousel-inner h5 {
+    font-size: 16px;
+}
+
 
 /* OUTROS ----------------------------------------------------------- */
 

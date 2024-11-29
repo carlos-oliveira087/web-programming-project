@@ -72,7 +72,7 @@
                 <div id="hamburger-menu-items">
                     <ul>
                         <li><a id="publish-button" href="./09-create-structure.html">Publish new article</a></li>
-                        <li><a id="published-button" href="#">My published articles</a></li>
+                        <li><a id="published-button" href="#my-articles">My published articles</a></li>
                         <li><a id="logout-button" href="#">Log out</a></li>
                         <li><a id="login-button" href="02-login-structure.html">Login</a></li>
                     </ul>
@@ -137,7 +137,7 @@
 
         <h3 class="text-center mt-4">Latest - World News</h3>
         <div id="news-container" class="row mt-5">
-            <!-- Local para os cards de notícia da API serem inseridos -->
+            <!-- Cards da API serão inseridos aqui dinamicamente -->
         </div>
 
         <div id="line"><hr></div>
@@ -145,40 +145,22 @@
         <div class="container mt-5 mb-5" id="my-articles">
             <h3 class="text-center">My Published Articles</h3>
             <div class="row g-4 align-items-start mt-5">
-                <!-- Notícia mais recente -->
+
                 <div class="latest-article col-md-6">
                     <h5>Most Recent:</h5>
-                    <?php if (!empty($latestNews)): ?>
-                        <img src="<?php echo htmlspecialchars($latestNews['news_image']); ?>" class="img-fluid" alt="Latest News Image">
-                        <h4 class="mt-3"><?php echo htmlspecialchars($latestNews['news_title']); ?></h4>
-                    <?php else: ?>
-                        <p>No news available at the moment.</p>
-                    <?php endif; ?>
-                </div>
+                    <a id="latest-article-link" href="./11-user-article-structure.html" class="latest-article-link">
+                        <img id="latest-article-img" alt="Latest News Image" class="img-fluid">
+                    <h4 class="mt-3" id="latest-article-title"></h4>
+                    </a>
+                    
+                </div> 
                 
-                
-                <!-- Carrossel de tópicos -->
                 <div class="trending-list ml-5 col-5">
                     <h5>More Created by Me:</h5>
                     <div id="articlesCarousel" class="carousel slide my-10" data-bs-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://via.placeholder.com/300x150" class="d-block w-100" alt="Artificial Intelligence">
-                                <h5 class="text-center mt-2">Artificial Intelligence in Education</h5>
-                            </div>
-
-                            <div class="carousel-item">
-                                <img src="https://via.placeholder.com/300x150" class="d-block w-100" alt="Climate Change">
-                                <h5 class="text-center mt-2">Climate Change Innovations</h5>
-                            </div>
-
-                            <div class="carousel-item">
-                                <img src="https://via.placeholder.com/300x150" class="d-block w-100" alt="Quantum Computing">
-                                <h5 class="text-center mt-2">Quantum Computing Advancements</h5>
-                            </div>
+                        <div class="carousel-inner " id="carousel-items">
+                            <!-- Notícias do carrossel aparecerão dinamicamente -->
                         </div>
-
-                        <!-- Controles do Carrossel -->
                         <button class="carousel-control-prev mb-5" type="button" data-bs-target="#articlesCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         </button>
@@ -187,8 +169,10 @@
                         </button>
                     </div>
                 </div>
+                
             </div>
         </div>
+        
     </div>
     
     

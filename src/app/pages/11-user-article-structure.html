@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
         <!-- CSS local -->
-        <link rel="stylesheet" href="../styles/10-article-page.css">
+        <link rel="stylesheet" href="../styles/11-user-article-page.css">
         
         <!-- CSS do Bootstrap -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -83,33 +83,39 @@
         </div>
     </header>
 
-    <div class="buttons-edit">
-        <button class="edit-button"><i class="fa-solid fa-pencil" id="edit"></i></button>
-        <button class="delete-button"><i class="fa-solid fa-trash" id="delete"></i></button>
+
+    <!-- Conteúdo principal -->
+    <div id="user-article-page-content">
+        
+        <!-- Botões de editar e excluir -->
+        <div id="buttons-container">
+            <button class="edit-button">
+                <i class="fa-solid fa-pen" id="edit"></i>
+                <p class="button-text">Edit</p>
+            </button>
+
+            <button class="delete-button">
+                <i class="fa-solid fa-trash" id="delete"></i>
+                <p class="button-text">Delete</p>
+            </button>
+        </div>
+
+        <!-- Título da notícia -->
+        <div id="title-container">
+            <h1 class="user-news-title">AI Solves Decades-Old Mathematical Conjecture</h1>
+        </div>
+
+        <!-- Imagem da notícia -->
+        <div id="image-container">
+            <img class="user-news-image" src="../../config/uploads/mathematics-news-img.jpg" alt="Cover image"/>
+        </div>
+
+        <!-- Corpo da notícia -->
+        <div id="user-news-body">A deep learning model has successfully solved the Hadamard conjecture for dimensions previously unproven. This milestone, achieved by a collaboration between mathematicians and computer scientists, showcases AI's potential to tackle longstanding problems. The result has sparked discussions about how machine learning can assist in advancing pure mathematics. Experts suggest this could lead to new methodologies for exploring abstract theories.</div>
     </div>
 
-    <!-- header da noticia-->
-    <div class="topics">
-        <!-- titulo-->
-        <h1 class="title">Revolutionizing Skyscraper Design with Sustainable Engineering</h1>
-    </section>
 
-    <!-- Preview image figure-->
-    <div class="image-container">
-        <img class="image" src="../../config/uploads/1710801284090.png"/>
-    </div>
-
-    <!-- Post content-->
-    <div class="text">
-        <p>Engineering innovation is redefining the skyline of our cities with a focus on sustainability and efficiency. Modern skyscrapers are no longer just architectural marvels—they are feats of sustainable engineering.
-
-            Today’s engineers incorporate cutting-edge technologies like carbon-neutral materials, wind-resistant structures, and energy-efficient designs. Vertical gardens, integrated solar panels, and water recycling systems are becoming standard features in high-rise buildings, transforming them into eco-friendly habitats.
-            
-            One remarkable example is the Bosco Verticale in Milan, Italy—a pair of residential towers wrapped in lush greenery. Projects like these prove that skyscrapers can harmonize with nature rather than overpower it.
-            
-            As cities grow denser, engineers continue to push the boundaries of what’s possible. With sustainable solutions at the forefront, the future of urban development is not just taller but greener and smarter than ever before.</p>
-    </div>  
-    
+    <!-- Footer -->    
     <footer class="footer" >
         <div id="footer-titles">
             <p class="footer-title">More from us</p>
