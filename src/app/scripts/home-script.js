@@ -8,10 +8,13 @@ document.addEventListener("DOMContentLoaded", () => {
             if (data.latestNews) {
                 const latestArticleImg = document.getElementById("latest-article-img");
                 const latestArticleTitle = document.getElementById("latest-article-title");
+                const latestArticleLink = document.getElementById("latest-article-link");
+                
 
-                if (latestArticleImg && latestArticleTitle) {
+                if (latestArticleImg && latestArticleTitle && latestArticleLink) {
                     latestArticleImg.src = `../../config/${data.latestNews.news_image}`;
                     latestArticleTitle.innerText = data.latestNews.news_title;
+                    latestArticleLink.href = `https://github.com/carlos-oliveira087/web-programming-project/blob/main/src/app/controllers/user-news-controller.php`;
                 }
             } else {
                 document.getElementById("latest-article-title").innerText = "No news available.";

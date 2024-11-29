@@ -403,3 +403,11 @@ footer hr {
     color: #001f3f;
 }
 
+/* Título das páginas stem */
+.latest-div-title {
+    font-size: 25px; 
+    font-weight: bold;    
+    text-align: center; 
+    margin-bottom: 40px;
+}
+
